@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title> Cat Game Calculator</title>
+        <script type="text/javascript" src="js/globals.js"></script>
+        <script type="text/javascript" src="js/classes.js"></script>
         <script type="text/javascript" src="js/crafting.js"></script>
         <script type="text/javascript" src="js/crafting_function.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
@@ -10,16 +12,16 @@
     </head>
     <body>
         <h1>Cat Game Calculator</h1>
-        <div class="box">
+        <div class="crafting-container">
             <div class="crafting-tier">
                 <h2>Basic Crafting</h2>
-                <div class="crafting-content">
+                <div class="crafting-items-container">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/string.png" alt="string">
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">string: </p>
+                                    <p class="inline-paragraph">String: </p>
                                     <p class="inline-paragraph" id="stringAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -28,15 +30,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 3 Cotton</p>
+                        <p>Time: 5 minutes</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/wood.png" alt="wood" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">wood:</p>
+                                    <p class="inline-paragraph">Wood:</p>
                                     <p class="inline-paragraph" id="woodAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -45,15 +47,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 3 Logs</p>
+                        <p>Time: 5 minutes</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">ribbon:</p>
+                                    <p class="inline-paragraph">Ribbon:</p>
                                     <p class="inline-paragraph" id="ribbonAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -62,21 +64,21 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 2 String, 2 Wood</p>
+                        <p>Time: 15 minutes</p>
                     </div>
                 </div>
             </div>
 
             <div class="crafting-tier">
                 <h2>Shiny Crafting</h2>
-                <div class="crafting-content">
+                <div class="crafting-items-container">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/metal.png" alt="metal" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">metal:</p>
+                                    <p class="inline-paragraph">Metal:</p>
                                     <p class="inline-paragraph" id="metalAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -85,15 +87,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 3 Rock</p>
+                        <p>Time: 15 minutes</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
-                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <img class="crafting-recipe-image" src="images/game/needles.png" alt="needles" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">needles:</p>
+                                    <p class="inline-paragraph">Needles:</p>
                                     <p class="inline-paragraph" id="needlesAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -102,15 +104,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 4 Metal, 1 Ribbon</p>
+                        <p>Time: 30 minutes</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
-                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <img class="crafting-recipe-image" src="images/game/sparkles.png" alt="sparkles" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">sparkles:</p>
+                                    <p class="inline-paragraph">Sparkles:</p>
                                     <p class="inline-paragraph" id="sparklesAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -119,21 +121,21 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 2 Needles, 2 Ribbons</p>
+                        <p>Time: 60 minutes</p>
                     </div>
                 </div>
             </div>
 
             <div class="crafting-tier">
                 <h2>Precious Crafting</h2>
-                <div class="crafting-content">
+                <div class="crafting-items-container">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <img class="crafting-recipe-image" src="images/game/bronze.png" alt="bronze" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">bronze:</p>
+                                    <p class="inline-paragraph">Bronze:</p>
                                     <p class="inline-paragraph" id="bronzeAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -142,15 +144,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 4 Rock</p>
+                        <p>Time: 30 minutes</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
-                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <img class="crafting-recipe-image" src="images/game/silver.png" alt="silver" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">silver:</p>
+                                    <p class="inline-paragraph">Silver:</p>
                                     <p class="inline-paragraph" id="silverAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -159,15 +161,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 3 Bronze, 1 Sparkles</p>
+                        <p>Time: 2 hours</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
-                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <img class="crafting-recipe-image" src="images/game/gold.png" alt="gold" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">gold:</p>
+                                    <p class="inline-paragraph">Gold:</p>
                                     <p class="inline-paragraph" id="goldAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -176,21 +178,21 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 2 Silver, 2 Sparkles</p>
+                        <p>Time: 6 hours</p>
                     </div>
                 </div>
             </div>
 
             <div class="crafting-tier">
                 <h2>Jewel Crafting</h2>
-                <div class="crafting-content">
+                <div class="crafting-items-container">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <img class="crafting-recipe-image" src="images/game/amethyst.png" alt="amethyst" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">amethyst:</p>
+                                    <p class="inline-paragraph">Amethyst:</p>
                                     <p class="inline-paragraph" id="amethystAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -199,15 +201,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 10 Quartz</p>
+                        <p>Time: 1 hour</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/pendant.png" alt="pendant" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">pendant:</p>
+                                    <p class="inline-paragraph">Pendant:</p>
                                     <p class="inline-paragraph" id="pendantAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -216,15 +218,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 7 Amethyst, 2 Silver</p>
+                        <p>Time: 3 hours</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/necklace.png" alt="necklace" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">necklace:</p>
+                                    <p class="inline-paragraph">Necklace:</p>
                                     <p class="inline-paragraph" id="necklaceAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -233,21 +235,21 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 3 Pendant, 2 Gold</p>
+                        <p>Time: 12 hours</p>
                     </div>
                 </div>
             </div>
 
             <div class="crafting-tier">
                 <h2>Magic Crafting</h2>
-                <div class="crafting-content">
+                <div class="crafting-items-container">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <img class="crafting-recipe-image" src="images/game/orb.png" alt="orb" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">orb:</p>
+                                    <p class="inline-paragraph">Orb:</p>
                                     <p class="inline-paragraph" id="orbAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -256,15 +258,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 20 Quartz</p>
+                        <p>Time: 1 hour</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/water.png" alt="water" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">water:</p>
+                                    <p class="inline-paragraph">Water:</p>
                                     <p class="inline-paragraph" id="waterAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -273,15 +275,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 2 Orb, 1 Silver</p>
+                        <p>Time: 6 hours</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/fire.png" alt="fire" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">fire:</p>
+                                    <p class="inline-paragraph">Fire:</p>
                                     <p class="inline-paragraph" id="fireAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -290,21 +292,21 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 6 Orbs, 1Gold</p>
+                        <p>Time: 12 hours</p>
                     </div>
                 </div>
             </div>
             
             <div class="crafting-tier">
                 <h2>Ancient Crafting</h2>
-                <div class="crafting-content">
+                <div class="crafting-items-container">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="r" />
+                            <img class="crafting-recipe-image" src="images/game/waterstone.png" alt="waterstone" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">waterstone:</p>
+                                    <p class="inline-paragraph">Waterstone:</p>
                                     <p class="inline-paragraph" id="waterstoneAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -313,15 +315,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 2 Water, 10 Ribbon</p>
+                        <p>Time: 12 hours</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/firestone.png" alt="firestone" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">firestone:</p>
+                                    <p class="inline-paragraph">Firestone:</p>
                                     <p class="inline-paragraph" id="firestoneAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -330,15 +332,15 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 1 Fire, 2 Sparkles</p>
+                        <p>Time: 12 hours</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/elementstone.png" alt="elementstone.png" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">elementstone:</p>
+                                    <p class="inline-paragraph">Elementstone:</p>
                                     <p class="inline-paragraph" id="elementstoneAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -347,21 +349,21 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 1 Firestone, 1 Waterstone</p>
+                        <p>Time: 24 hours</p>
                     </div>
                 </div>
             </div>
 
             <div class="crafting-tier">
                 <h2>Ruin Crafting</h2>
-                <div class="crafting-content">
-                    <div class="crafting-items legendary">
+                <div class="crafting-items-container">
+                    <div class="crafting-items fit-content legendary">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/artifact.png" alt="artifact" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
-                                    <p class="inline-paragraph">artifact:</p>
+                                    <p class="inline-paragraph">Artifact:</p>
                                     <p class="inline-paragraph" id="artifactAmount">0</p>
                                 </div>
                                 <div class="arrow-container">
@@ -370,16 +372,17 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Recipe: 2String, 2Wood</p>
-                        <p>Crafting time: 15 minutes</p>
+                        <p>Recipe: 1 Elementstone, 1 Necklace</p>
+                        <p>Time: 3 days</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="box">
-            <button id="calculate">Calculate</button>
-            <p id="output"></p>
+        <input id="userTime" type="number" value="30"/>
+        <button id="calculate">Calculate</button>
+        <p id="output"></p>
+        <div id="outputContainer" class="output-container">
         </div>
     </body>
 </html>

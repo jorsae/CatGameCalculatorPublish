@@ -16,7 +16,7 @@ h1{
     text-align: center;
 }
 
-.box{
+.crafting-container{
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -34,10 +34,14 @@ h1{
     margin: 0px;
 }
 
-.crafting-content{
+.crafting-items-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.crafting-items{
+    width: 100%;
 }
 
 .rare{
@@ -50,6 +54,10 @@ h1{
 
 .legendary{
     background-image: linear-gradient(to bottom, #dd7cdb, #a859b4);
+}
+
+.fit-content{
+    width: fit-content;
 }
 
 .crafting-recipe-image{
@@ -94,4 +102,33 @@ h1{
 
 .inline-paragraph{
     display: inline-flex;
+}
+
+/* CSS for output of the calculations */
+
+.output-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: auto;
+}
+
+.output-content-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.output-content-text{
+    width: 128px;
+}
+
+.output-content{
+    display: flex;
+    justify-content: center;
+}
+
+.output-content img{
+    width: 64px;
 }
