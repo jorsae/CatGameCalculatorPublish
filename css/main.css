@@ -44,16 +44,24 @@ h1{
     width: 100%;
 }
 
-.rare{
+.raw{
+    background-image: linear-gradient(to bottom, #ffffff, #aaaaaa);
+}
+
+.common{
     background-image: linear-gradient(to bottom, #2de3f5, #169ed1);
 }
 
-.epic{
+.rare{
     background-image: linear-gradient(to bottom, #f55d69, #cb2347);
 }
 
-.legendary{
+.epic{
     background-image: linear-gradient(to bottom, #dd7cdb, #a859b4);
+}
+
+.legendary{
+    background-image: linear-gradient(to bottom, #81e3da, #7d2ba6);
 }
 
 .fit-content{
@@ -104,8 +112,21 @@ h1{
     display: inline-flex;
 }
 
-/* CSS for output of the calculations */
+/* CSS for the calculator container */
+.calculator-container{
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
 
+.user-time{
+    top: 0px;
+    bottom: 0px;
+    margin: auto 4px auto 4px;
+}
+
+/* CSS for output of the calculations */
 .output-container{
     display: flex;
     flex-direction: column;

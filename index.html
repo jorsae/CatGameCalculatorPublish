@@ -9,6 +9,7 @@
         <script type="text/javascript" src="js/crafting_function.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/media.css">
     </head>
     <body>
         <h1>Cat Game Calculator</h1>
@@ -16,13 +17,13 @@
             <div class="crafting-tier">
                 <h2>Basic Crafting</h2>
                 <div class="crafting-items-container">
-                    <div class="crafting-items rare">
+                    <div class="crafting-items common">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/string.png" alt="string">
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">String: </p>
-                                    <p class="inline-paragraph" id="stringAmount">0</p>
+                                    <p id="stringAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('string')">
@@ -33,13 +34,13 @@
                         <p>Recipe: 3 Cotton</p>
                         <p>Time: 5 minutes</p>
                     </div>
-                    <div class="crafting-items epic">
+                    <div class="crafting-items rare">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/wood.png" alt="wood" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Wood:</p>
-                                    <p class="inline-paragraph" id="woodAmount">0</p>
+                                    <p id="woodAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('wood')" />
@@ -50,13 +51,13 @@
                         <p>Recipe: 3 Logs</p>
                         <p>Time: 5 minutes</p>
                     </div>
-                    <div class="crafting-items legendary">
+                    <div class="crafting-items epic">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Ribbon:</p>
-                                    <p class="inline-paragraph" id="ribbonAmount">0</p>
+                                    <p id="ribbonAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('ribbon')" />
@@ -73,13 +74,13 @@
             <div class="crafting-tier">
                 <h2>Shiny Crafting</h2>
                 <div class="crafting-items-container">
-                    <div class="crafting-items rare">
+                    <div class="crafting-items common">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/metal.png" alt="metal" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Metal:</p>
-                                    <p class="inline-paragraph" id="metalAmount">0</p>
+                                    <p id="metalAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('metal')" />
@@ -90,13 +91,13 @@
                         <p>Recipe: 3 Rock</p>
                         <p>Time: 15 minutes</p>
                     </div>
-                    <div class="crafting-items epic">
+                    <div class="crafting-items rare">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/needles.png" alt="needles" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Needles:</p>
-                                    <p class="inline-paragraph" id="needlesAmount">0</p>
+                                    <p id="needlesAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('needles')" />
@@ -107,13 +108,13 @@
                         <p>Recipe: 4 Metal, 1 Ribbon</p>
                         <p>Time: 30 minutes</p>
                     </div>
-                    <div class="crafting-items legendary">
+                    <div class="crafting-items epic">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/sparkles.png" alt="sparkles" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Sparkles:</p>
-                                    <p class="inline-paragraph" id="sparklesAmount">0</p>
+                                    <p id="sparklesAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('sparkles')" />
@@ -130,13 +131,13 @@
             <div class="crafting-tier">
                 <h2>Precious Crafting</h2>
                 <div class="crafting-items-container">
-                    <div class="crafting-items rare">
+                    <div class="crafting-items common">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/bronze.png" alt="bronze" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Bronze:</p>
-                                    <p class="inline-paragraph" id="bronzeAmount">0</p>
+                                    <p id="bronzeAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('bronze')" />
@@ -147,13 +148,13 @@
                         <p>Recipe: 4 Rock</p>
                         <p>Time: 30 minutes</p>
                     </div>
-                    <div class="crafting-items epic">
+                    <div class="crafting-items rare">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/silver.png" alt="silver" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Silver:</p>
-                                    <p class="inline-paragraph" id="silverAmount">0</p>
+                                    <p id="silverAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('silver')" />
@@ -164,13 +165,13 @@
                         <p>Recipe: 3 Bronze, 1 Sparkles</p>
                         <p>Time: 2 hours</p>
                     </div>
-                    <div class="crafting-items legendary">
+                    <div class="crafting-items epic">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/gold.png" alt="gold" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Gold:</p>
-                                    <p class="inline-paragraph" id="goldAmount">0</p>
+                                    <p id="goldAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('gold')" />
@@ -187,13 +188,13 @@
             <div class="crafting-tier">
                 <h2>Jewel Crafting</h2>
                 <div class="crafting-items-container">
-                    <div class="crafting-items rare">
+                    <div class="crafting-items common">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/amethyst.png" alt="amethyst" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Amethyst:</p>
-                                    <p class="inline-paragraph" id="amethystAmount">0</p>
+                                    <p id="amethystAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('amethyst')" />
@@ -204,13 +205,13 @@
                         <p>Recipe: 10 Quartz</p>
                         <p>Time: 1 hour</p>
                     </div>
-                    <div class="crafting-items epic">
+                    <div class="crafting-items rare">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/pendant.png" alt="pendant" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Pendant:</p>
-                                    <p class="inline-paragraph" id="pendantAmount">0</p>
+                                    <p id="pendantAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('pendant')" />
@@ -221,13 +222,13 @@
                         <p>Recipe: 7 Amethyst, 2 Silver</p>
                         <p>Time: 3 hours</p>
                     </div>
-                    <div class="crafting-items legendary">
+                    <div class="crafting-items epic">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/necklace.png" alt="necklace" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Necklace:</p>
-                                    <p class="inline-paragraph" id="necklaceAmount">0</p>
+                                    <p id="necklaceAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('necklace')" />
@@ -244,13 +245,13 @@
             <div class="crafting-tier">
                 <h2>Magic Crafting</h2>
                 <div class="crafting-items-container">
-                    <div class="crafting-items rare">
+                    <div class="crafting-items common">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/orb.png" alt="orb" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Orb:</p>
-                                    <p class="inline-paragraph" id="orbAmount">0</p>
+                                    <p id="orbAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('orb')" />
@@ -261,13 +262,13 @@
                         <p>Recipe: 20 Quartz</p>
                         <p>Time: 1 hour</p>
                     </div>
-                    <div class="crafting-items epic">
+                    <div class="crafting-items rare">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/water.png" alt="water" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Water:</p>
-                                    <p class="inline-paragraph" id="waterAmount">0</p>
+                                    <p id="waterAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('water')" />
@@ -278,13 +279,13 @@
                         <p>Recipe: 2 Orb, 1 Silver</p>
                         <p>Time: 6 hours</p>
                     </div>
-                    <div class="crafting-items legendary">
+                    <div class="crafting-items epic">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/fire.png" alt="fire" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Fire:</p>
-                                    <p class="inline-paragraph" id="fireAmount">0</p>
+                                    <p id="fireAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('fire')" />
@@ -301,13 +302,13 @@
             <div class="crafting-tier">
                 <h2>Ancient Crafting</h2>
                 <div class="crafting-items-container">
-                    <div class="crafting-items rare">
+                    <div class="crafting-items common">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/waterstone.png" alt="waterstone" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Waterstone:</p>
-                                    <p class="inline-paragraph" id="waterstoneAmount">0</p>
+                                    <p id="waterstoneAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('waterstone')" />
@@ -318,13 +319,13 @@
                         <p>Recipe: 2 Water, 10 Ribbon</p>
                         <p>Time: 12 hours</p>
                     </div>
-                    <div class="crafting-items epic">
+                    <div class="crafting-items rare">
                         <div class="crafting-items-top">
                             <img class="crafting-recipe-image" src="images/game/firestone.png" alt="firestone" />
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Firestone:</p>
-                                    <p class="inline-paragraph" id="firestoneAmount">0</p>
+                                    <p id="firestoneAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('firestone')" />
@@ -341,7 +342,7 @@
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Elementstone:</p>
-                                    <p class="inline-paragraph" id="elementstoneAmount">0</p>
+                                    <p id="elementstoneAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('elementstone')" />
@@ -364,7 +365,7 @@
                             <div class="crafting-items-amount">
                                 <div class="crafting-items-text">
                                     <p class="inline-paragraph">Artifact:</p>
-                                    <p class="inline-paragraph" id="artifactAmount">0</p>
+                                    <p id="artifactAmount" class="inline-paragraph">0</p>
                                 </div>
                                 <div class="arrow-container">
                                     <img class="arrow" src="images/arrow-up.png" onclick="clickUp('artifact')" />
@@ -378,10 +379,12 @@
                 </div>
             </div>
         </div>
-
-        <input id="userTime" type="number" value="30"/>
-        <button id="calculate">Calculate</button>
-        <p id="output"></p>
+        
+        <hr>
+        <div class="calculator-container">
+            <input id="userTime" class="user-time" type="time" value="02:00" />
+            <button id="calculate"><img src="images/calculate-button64.png"></button>
+        </div>
         <div id="outputContainer" class="output-container">
         </div>
     </body>
