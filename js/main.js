@@ -1,349 +1,166 @@
-var _0x357a = [
-    'ogltU',
-    'WrURJ',
-    'output-content-text',
-    'pvWFt',
-    'gFNaQ',
-    'EYSEF',
-    'RRvRV',
-    'TNUfg',
-    'bGDQl',
-    'eaATh',
-    'uXnQC',
-    'output-content-row',
-    'pkxGO',
-    'gaOkD',
-    'AxPVN',
-    'eumxG',
-    'FvJgi',
-    'split',
-    'FTYra',
-    'BkYhR',
-    'LlIxb',
-    'calculate',
-    'onclick',
-    'userTimeMinutes',
-    'Amount',
-    'UserItem',
-    'outputContainer',
-    'span',
-    'spanTotal',
-    'output-container-total',
-    'output-total',
-    'Total\x20cost:\x20',
-    'getElementById',
-    'userTimeHours',
-    'CcXiC',
-    'value',
-    'SYpKF',
-    'oexxe',
-    'get',
-    'ZswIo',
-    'name',
-    'GsBoK',
-    'rFVfg',
-    'innerText',
-    'gHAIr',
-    'push',
-    'unVfW',
-    'craftingRequirements',
-    'tZOvr',
-    'cnjwC',
-    'HIDDEN',
-    'AIfBK',
-    'innerHTML',
-    'createElement',
-    'khXxu',
-    'classList',
-    'add',
-    'JKBQW',
-    'output-container-items',
-    'from',
-    'length',
-    'rUDZV',
-    'rarity',
-    'baseCost',
-    'PWVMv',
-    'getRarityValue',
-    'getCost',
-    'getItemsPerCraft',
-    'getCrafts',
-    'jZLhL',
-    'appendChild',
-    'Completion\x20time:\x20',
-    'clear',
-    'delete',
-    'div',
-    'img',
-    '.png',
-    'Cost:\x20',
-    'x,\x20',
-    '\x20times',
-    'dSwuk',
-    'wDTGn',
-    'output-content',
-    'BdTJU',
-    'src',
-    'pcVYm'
-];
-(function (_0x49da1a, _0x4f2c61) {
-    var _0x7cc56 = function (_0x3612b5) {
-        while (--_0x3612b5) {
-            _0x49da1a['push'](_0x49da1a['shift']());
-        }
-    };
-    _0x7cc56(++_0x4f2c61);
-}(_0x357a, 0x6b));
-var _0x427d = function (_0x1c1849, _0x4d3539) {
-    _0x1c1849 = _0x1c1849 - 0x0;
-    var _0x5f51e5 = _0x357a[_0x1c1849];
-    return _0x5f51e5;
-};
-window['onload'] = init;
-function init() {
-    document['getElementById'](_0x427d('0x0'))[_0x427d('0x1')] = calculate;
+window.onload = init;
+
+function init(){
+    document.getElementById("calculate").onclick = calculate;
 }
-function calculate() {
-    var _0x26bcd3 = {
-        'PWVMv': function (_0x5b7095, _0x3897a5) {
-            return _0x5b7095 - _0x3897a5;
-        },
-        'CcXiC': function (_0x51be74, _0x527f1d) {
-            return _0x51be74(_0x527f1d);
-        },
-        'FkIbS': _0x427d('0x2'),
-        'SYpKF': function (_0xaf786a, _0x8b9a6b) {
-            return _0xaf786a(_0x8b9a6b);
-        },
-        'tZOvr': function (_0x52b43c, _0x585710) {
-            return _0x52b43c * _0x585710;
-        },
-        'oexxe': function (_0x2b8346, _0x2799cf) {
-            return _0x2b8346 <= _0x2799cf;
-        },
-        'ZswIo': function (_0x53d04f, _0x406ac7) {
-            return _0x53d04f + _0x406ac7;
-        },
-        'GsBoK': _0x427d('0x3'),
-        'rFVfg': function (_0x1139ad, _0x56594c) {
-            return _0x1139ad !== _0x56594c;
-        },
-        'gHAIr': function (_0x40f01b, _0x194fca) {
-            return _0x40f01b > _0x194fca;
-        },
-        'unVfW': function (_0x3c138c, _0x589108) {
-            return _0x3c138c < _0x589108;
-        },
-        'cnjwC': _0x427d('0x4'),
-        'AIfBK': function (_0x5aa5b2, _0x2a973b, _0x33cb44) {
-            return _0x5aa5b2(_0x2a973b, _0x33cb44);
-        },
-        'QjSxv': _0x427d('0x5'),
-        'khXxu': _0x427d('0x6'),
-        'MotBV': _0x427d('0x7'),
-        'jKtiL': _0x427d('0x8'),
-        'JKBQW': _0x427d('0x9'),
-        'rUDZV': function (_0x18923c, _0x3adf47) {
-            return _0x18923c === _0x3adf47;
-        },
-        'jZLhL': _0x427d('0xa')
-    };
-    var _0x503dfb = parseInt(document[_0x427d('0xb')](_0x427d('0xc'))['value']);
-    var _0x1228c7 = _0x26bcd3[_0x427d('0xd')](parseInt, document[_0x427d('0xb')](_0x26bcd3['FkIbS'])[_0x427d('0xe')]);
-    var _0x492e2d = 0x0;
-    if (!_0x26bcd3[_0x427d('0xf')](isNaN, _0x503dfb)) {
-        _0x492e2d += _0x26bcd3['tZOvr'](_0x503dfb, 0x3c);
+
+/*
+    iterates through all the craftingItem text fields and adds all the values > 0 in the userItemReq list.
+    it then creates a new CraftingItem called "UseItem", with the new requirements and calculates everything.
+    Afterwards the CraftingItem "UseItem" is then deleted from the craftingRecipes.
+*/
+function calculate(){
+    var userHours = parseInt(document.getElementById("userTimeHours").value);
+    var userMinutes = parseInt(document.getElementById("userTimeMinutes").value);
+    
+    var userTime = 0;
+    if(!isNaN(userHours)) {
+        userTime += userHours * 60;
     }
-    if (!_0x26bcd3[_0x427d('0xf')](isNaN, _0x1228c7)) {
-        _0x492e2d += _0x1228c7;
+    if(!isNaN(userMinutes)){
+        userTime += userMinutes;
     }
-    if (_0x26bcd3[_0x427d('0x10')](_0x492e2d, 0x0)) {
+    if(userTime <= 0){
         return;
     }
-    var _0x568bd4 = [];
-    for (const _0x5cda5a of craftingRecipes['entries']()) {
-        var _0x4e5232 = craftingRecipes[_0x427d('0x11')](_0x5cda5a[0x0]);
-        var _0x3d4990 = document['getElementById'](_0x26bcd3[_0x427d('0x12')](_0x4e5232[_0x427d('0x13')]['toLowerCase'](), _0x26bcd3[_0x427d('0x14')]));
-        if (_0x26bcd3[_0x427d('0x15')](_0x3d4990, null)) {
-            var _0x5c641a = _0x26bcd3[_0x427d('0xf')](parseInt, _0x3d4990[_0x427d('0x16')]);
-            _0x3d4990['innerText'] = '0';
-            if (_0x26bcd3[_0x427d('0x17')](_0x5c641a, 0x0)) {
-                _0x568bd4[_0x427d('0x18')](new CraftingRequirement(_0x4e5232, _0x5c641a));
-                for (var _0x5d4317 = 0x0; _0x26bcd3[_0x427d('0x19')](_0x5d4317, _0x4e5232[_0x427d('0x1a')]['length']); _0x5d4317++) {
-                    var _0x288807 = _0x4e5232[_0x427d('0x1a')][_0x5d4317]['craftingItem'];
-                    var _0x564624 = _0x26bcd3[_0x427d('0x1b')](_0x4e5232[_0x427d('0x1a')][_0x5d4317]['quantity'], _0x5c641a);
-                    _0x568bd4[_0x427d('0x18')](new CraftingRequirement(_0x288807, _0x564624));
+    
+    var userItemReq = [];
+    for (const entry of craftingRecipes.entries()) {
+        var item = craftingRecipes.get(entry[0]);
+        var itemAmountElement = document.getElementById(item.name.toLowerCase() + 'Amount');
+        
+        if(itemAmountElement !== null){
+            var itemAmount = parseInt(itemAmountElement.innerText);
+            itemAmountElement.innerText = "0";
+            if(itemAmount > 0){
+                userItemReq.push(new CraftingRequirement(item, itemAmount));
+                for(var i = 0; i < item.craftingRequirements.length; i++){
+                    var craftingItem = item.craftingRequirements[i].craftingItem;
+                    var totalItemAmount = item.craftingRequirements[i].quantity * itemAmount;
+                    userItemReq.push(new CraftingRequirement(craftingItem, totalItemAmount));
                 }
             }
+
         }
         continue;
     }
-    userItem = new CraftingItem(_0x26bcd3[_0x427d('0x1c')], 0x0, 0x0, rarity[_0x427d('0x1d')], _0x568bd4);
-    craftingRecipes['set'](userItem[_0x427d('0x13')], userItem);
-    var _0x4f7ebf = _0x26bcd3[_0x427d('0x1e')](getCraftingRequirements, userItem, 0x1);
-    var _0x590a49 = document[_0x427d('0xb')](_0x26bcd3['QjSxv']);
-    _0x590a49[_0x427d('0x1f')] = '';
-    var _0x1f4e12 = document[_0x427d('0x20')](_0x26bcd3[_0x427d('0x21')]);
-    _0x1f4e12['id'] = _0x26bcd3['MotBV'];
-    _0x1f4e12[_0x427d('0x22')][_0x427d('0x23')](_0x26bcd3['jKtiL']);
-    _0x1f4e12[_0x427d('0x22')]['add'](_0x26bcd3[_0x427d('0x24')]);
-    _0x590a49['appendChild'](_0x1f4e12);
-    var _0x50aa7d = document['createElement'](_0x427d('0x6'));
-    _0x50aa7d[_0x427d('0x22')][_0x427d('0x23')](_0x427d('0x25'));
-    var _0x4de162 = Array[_0x427d('0x26')](_0x4f7ebf);
-    var _0x2c1c46 = [];
-    for (var _0x5d4317 = 0x0; _0x5d4317 < _0x4de162[_0x427d('0x27')]; _0x5d4317++) {
-        var _0x4e5232 = craftingRecipes[_0x427d('0x11')](_0x4de162[_0x5d4317][0x0]);
-        if (_0x26bcd3[_0x427d('0x28')](_0x4e5232[_0x427d('0x29')], rarity[_0x427d('0x1d')])) {
+    userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, userItemReq);
+    craftingRecipes.set(userItem.name, userItem);
+    var reqs = getCraftingRequirements(userItem, 1);
+    
+    // Make sure everything is cleared
+    var outputContainerElement = document.getElementById("outputContainer")
+    outputContainerElement.innerHTML = "";
+    
+    // Create span for storing "total" information, cost, time, etc
+    var spanTotal = document.createElement("span");
+    spanTotal.id = "spanTotal";
+    spanTotal.classList.add("output-container-total");
+    spanTotal.classList.add("output-total");
+    outputContainerElement.appendChild(spanTotal);
+    
+    // Create span for storing all crafting items needed
+    var spanItems = document.createElement("span");
+    spanItems.classList.add("output-container-items");
+    
+    // Sort and output all the crafting items
+    var temporaryCraftingItems = Array.from(reqs);
+    var craftingItems = [];
+    for(var i = 0; i < temporaryCraftingItems.length; i++){
+        var item = craftingRecipes.get(temporaryCraftingItems[i][0]);
+        if(item.rarity === rarity.HIDDEN){
             continue;
         }
-        var _0x2bb9aa = _0x4de162[_0x5d4317][0x1];
-        _0x2c1c46[_0x427d('0x18')](new CraftingItemOutput(_0x4e5232[_0x427d('0x13')], _0x4e5232['craftingTime'], _0x4e5232[_0x427d('0x2a')], _0x4e5232[_0x427d('0x29')], _0x2bb9aa));
+        var quantity = temporaryCraftingItems[i][1];
+        craftingItems.push(new CraftingItemOutput(item.name, item.craftingTime, item.baseCost, item.rarity, quantity));
     }
-    _0x2c1c46['sort'](function (_0x5d57f1, _0x50c4e3) {
-        return _0x26bcd3[_0x427d('0x2b')](_0x5d57f1[_0x427d('0x2c')](), _0x50c4e3[_0x427d('0x2c')]());
+    
+    craftingItems.sort(function(a, b){
+        return a.getRarityValue() - b.getRarityValue();
     });
-    var _0x150ac5 = 0x0;
-    for (var _0x5d4317 = 0x0; _0x5d4317 < _0x2c1c46['length']; _0x5d4317++) {
-        var _0x4e5232 = _0x2c1c46[_0x5d4317];
-        var _0x442f26 = _0x4e5232[_0x427d('0x2d')](_0x492e2d);
-        createOutput(_0x4e5232, _0x442f26, _0x4e5232[_0x427d('0x2e')](_0x492e2d), _0x4e5232[_0x427d('0x2f')](_0x492e2d), _0x50aa7d);
-        _0x150ac5 += _0x442f26;
+    
+    var totalCost = 0;
+    for(var i = 0; i < craftingItems.length; i++){
+        var item = craftingItems[i];
+        var cost = item.getCost(userTime);
+        createOutput(item, cost, item.getItemsPerCraft(userTime), item.getCrafts(userTime), spanItems);
+        totalCost += cost;
     }
-    var _0x15468f = document[_0x427d('0x20')]('p');
-    _0x15468f[_0x427d('0x16')] = _0x26bcd3[_0x427d('0x12')](_0x26bcd3[_0x427d('0x30')], _0x150ac5);
-    _0x1f4e12[_0x427d('0x31')](_0x15468f);
-    var _0x4d0d03 = document[_0x427d('0x20')]('p');
-    _0x4d0d03[_0x427d('0x16')] = _0x26bcd3[_0x427d('0x12')](_0x427d('0x32'), _0x492e2d);
-    _0x1f4e12[_0x427d('0x31')](_0x4d0d03);
-    currentCraft[_0x427d('0x33')]();
-    craftingRecipes[_0x427d('0x34')](userItem[_0x427d('0x13')]);
+
+    // Adding paragraph with total cost, time, etc to the spanTotal element
+    var totalCostParagraph = document.createElement("p");
+    totalCostParagraph.innerText = "Total cost: " + totalCost
+    spanTotal.appendChild(totalCostParagraph);
+
+    var totalTimeParagraph = document.createElement("p");
+    totalTimeParagraph.innerText = "Completion time: " + userTime;
+    spanTotal.appendChild(totalTimeParagraph);
+
+    currentCraft.clear();
+    craftingRecipes.delete(userItem.name);
 }
-function createOutput(_0x7dfac8, _0x36e3fd, _0x4ecb86, _0x25bc69, _0x385655) {
-    var _0x9bcde2 = {
-        'dSwuk': _0x427d('0x5'),
-        'wDTGn': _0x427d('0x35'),
-        'BdTJU': _0x427d('0x36'),
-        'pcVYm': function (_0x3ffb4e, _0x6b9615) {
-            return _0x3ffb4e + _0x6b9615;
-        },
-        'ogltU': 'images/game/',
-        'WrURJ': _0x427d('0x37'),
-        'pvWFt': function (_0x58059b, _0x583d61) {
-            return _0x58059b + _0x583d61;
-        },
-        'mBgUc': function (_0x4a4205, _0xfb3367) {
-            return _0x4a4205 + _0xfb3367;
-        },
-        'gFNaQ': function (_0x37a47e, _0x502c02) {
-            return _0x37a47e * _0x502c02;
-        },
-        'EYSEF': function (_0x283f58, _0x565c39) {
-            return _0x283f58 + _0x565c39;
-        },
-        'sBBkL': _0x427d('0x38'),
-        'RRvRV': function (_0x443359, _0x39f68f) {
-            return _0x443359 + _0x39f68f;
-        },
-        'TNUfg': function (_0x995d44, _0x28e5f7) {
-            return _0x995d44 + _0x28e5f7;
-        },
-        'bGDQl': 'Craft:\x20',
-        'eaATh': _0x427d('0x39'),
-        'uXnQC': _0x427d('0x3a')
-    };
-    var _0x3ae46e = document['getElementById'](_0x9bcde2[_0x427d('0x3b')]);
-    var _0x3e2da0 = document[_0x427d('0x20')](_0x9bcde2[_0x427d('0x3c')]);
-    _0x3e2da0[_0x427d('0x22')][_0x427d('0x23')](_0x427d('0x3d'));
-    var _0x45bf7d = document[_0x427d('0x20')](_0x9bcde2[_0x427d('0x3e')]);
-    _0x45bf7d[_0x427d('0x3f')] = _0x9bcde2[_0x427d('0x40')](_0x9bcde2[_0x427d('0x40')](_0x9bcde2[_0x427d('0x41')], _0x7dfac8['name']['toLowerCase']()), _0x9bcde2[_0x427d('0x42')]);
-    var _0x4ffe1d = document['createElement'](_0x427d('0x35'));
-    _0x4ffe1d['classList'][_0x427d('0x23')](_0x427d('0x43'));
-    _0x4ffe1d[_0x427d('0x22')]['add'](_0x7dfac8[_0x427d('0x29')]);
-    var _0x4c004d = document[_0x427d('0x20')]('p');
-    _0x4c004d[_0x427d('0x16')] = _0x9bcde2[_0x427d('0x44')](_0x9bcde2['mBgUc'](_0x7dfac8[_0x427d('0x13')], ':\x20'), _0x9bcde2[_0x427d('0x45')](_0x4ecb86, _0x25bc69));
-    var _0x753059 = document[_0x427d('0x20')]('p');
-    _0x753059[_0x427d('0x16')] = _0x9bcde2[_0x427d('0x46')](_0x9bcde2['sBBkL'], _0x36e3fd);
-    var _0x551d6c = document[_0x427d('0x20')]('p');
-    _0x551d6c[_0x427d('0x16')] = _0x9bcde2[_0x427d('0x47')](_0x9bcde2[_0x427d('0x47')](_0x9bcde2[_0x427d('0x48')](_0x9bcde2[_0x427d('0x49')], _0x4ecb86) + _0x9bcde2[_0x427d('0x4a')], _0x25bc69), _0x9bcde2[_0x427d('0x4b')]);
-    _0x4ffe1d[_0x427d('0x31')](_0x4c004d);
-    _0x4ffe1d['appendChild'](_0x753059);
-    _0x4ffe1d['appendChild'](_0x551d6c);
-    _0x3e2da0[_0x427d('0x31')](_0x45bf7d);
-    _0x3e2da0['appendChild'](_0x4ffe1d);
-    _0x385655[_0x427d('0x31')](_0x3e2da0);
-    _0x3ae46e['appendChild'](_0x385655);
+
+function createOutput(item, cost, itemsPerCraft, crafts, spanItems){
+    var outputContainerElement = document.getElementById("outputContainer");
+
+    var outputDiv = document.createElement("div");
+    outputDiv.classList.add("output-content");
+
+    var imgDiv = document.createElement("img");
+    imgDiv.src = "images/game/" + item.name.toLowerCase() + ".png";
+
+    var outputTextDiv = document.createElement("div");
+    outputTextDiv.classList.add("output-content-text");
+    outputTextDiv.classList.add(item.rarity);
+
+    var textOutputItem = document.createElement("p");
+    textOutputItem.innerText = item.name + ": " + (itemsPerCraft*crafts);
+    
+    var textOutputCost = document.createElement("p");
+    textOutputCost.innerText = "Cost: " + cost;
+
+    var textOutputCraft = document.createElement("p");
+    textOutputCraft.innerText = "Craft: " + itemsPerCraft + "x, " + crafts + " times";
+
+    outputTextDiv.appendChild(textOutputItem);
+    outputTextDiv.appendChild(textOutputCost);
+    outputTextDiv.appendChild(textOutputCraft);
+
+    outputDiv.appendChild(imgDiv);
+    outputDiv.appendChild(outputTextDiv);
+    spanItems.appendChild(outputDiv);
+
+    outputContainerElement.appendChild(spanItems);
 }
-function getOutputRow(_0x2cd660) {
-    var _0x4cd3be = {
-        'pkxGO': function (_0x726def, _0x61d571) {
-            return _0x726def === _0x61d571;
-        },
-        'gaOkD': _0x427d('0x35'),
-        'ajPrN': _0x427d('0x4c'),
-        'AxPVN': function (_0x5e0cbc, _0xcb5264) {
-            return _0x5e0cbc - _0xcb5264;
-        }
-    };
-    var _0x4503f5 = _0x2cd660 % outputRows;
-    if (_0x4cd3be[_0x427d('0x4d')](_0x4503f5, 0x0)) {
-        var _0x534066 = document[_0x427d('0x20')](_0x4cd3be[_0x427d('0x4e')]);
-        _0x534066[_0x427d('0x22')][_0x427d('0x23')](_0x4cd3be['ajPrN']);
-        _0x534066['id'] = _0x2cd660 - _0x4503f5;
-        return _0x534066;
+
+function getOutputRow(itemNumber){
+    var itemNumberModulo = itemNumber % outputRows;
+    if(itemNumberModulo === 0){
+        var outputRowElement = document.createElement("div");
+        outputRowElement.classList.add("output-content-row");
+        outputRowElement.id = itemNumber - itemNumberModulo;
+        return outputRowElement;
     }
-    return document[_0x427d('0xb')](_0x4cd3be[_0x427d('0x4f')](_0x2cd660, _0x4503f5));
+    return document.getElementById(itemNumber - itemNumberModulo);
 }
-function clickUp(_0x1463f9) {
-    var _0x53b241 = {
-        'eumxG': _0x427d('0x3'),
-        'FvJgi': function (_0x231b67, _0x462b15) {
-            return _0x231b67(_0x462b15);
-        }
-    };
-    var _0x2b639f = document['getElementById'](_0x1463f9 + _0x53b241[_0x427d('0x50')]);
-    if (_0x2b639f === null) {
+
+function clickUp(arg){
+    var element = document.getElementById(arg + "Amount");
+    if(element === null){
         return;
     }
-    var _0x563b59 = _0x53b241[_0x427d('0x51')](parseInt, _0x2b639f[_0x427d('0x16')]);
-    _0x2b639f['innerText'] = ++_0x563b59;
+    var value = parseInt(element.innerText);
+    element.innerText = ++value;
 }
-function clickDown(_0xed5980) {
-    var _0x5d7004 = {
-        'FTYra': function (_0x1e0b39, _0x50bd1a) {
-            return _0x1e0b39 + _0x50bd1a;
-        },
-        'MpUVS': 'Amount',
-        'BkYhR': function (_0xe85b63, _0x32d2bb) {
-            return _0xe85b63(_0x32d2bb);
-        },
-        'LlIxb': function (_0x6f8960, _0x3928de) {
-            return _0x6f8960 <= _0x3928de;
-        }
-    };
-    var _0x4f7741 = '0|2|1|4|3'[_0x427d('0x52')]('|'), _0x320fe0 = 0x0;
-    while (!![]) {
-        switch (_0x4f7741[_0x320fe0++]) {
-        case '0':
-            var _0x23f128 = document['getElementById'](_0x5d7004[_0x427d('0x53')](_0xed5980, _0x5d7004['MpUVS']));
-            continue;
-        case '1':
-            var _0x455eec = _0x5d7004[_0x427d('0x54')](parseInt, _0x23f128['innerText']);
-            continue;
-        case '2':
-            if (_0x23f128 === null) {
-                return;
-            }
-            continue;
-        case '3':
-            if (_0x5d7004[_0x427d('0x55')](_0x455eec, 0x0)) {
-                _0x23f128[_0x427d('0x16')] = 0x0;
-            }
-            continue;
-        case '4':
-            _0x23f128[_0x427d('0x16')] = --_0x455eec;
-            continue;
-        }
-        break;
+
+function clickDown(arg){
+    var element = document.getElementById(arg + "Amount");
+    if(element === null){
+        return;
+    }
+    var value = parseInt(element.innerText);
+    element.innerText = --value;
+    if(value <= 0){
+        element.innerText = 0;
     }
 }
