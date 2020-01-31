@@ -1,145 +1,143 @@
-var _0x3971 = [
-    'Fire',
+var _0x4ab9 = [
+    'RARE',
+    'Ribbon',
+    'EPIC',
+    'Metal',
+    'Bronze',
+    'Silver',
+    'Gold',
+    'Amethyst',
+    'Necklace',
+    'Orb',
     'Waterstone',
     'Firestone',
-    'Elementstone',
     'LEGENDARY',
     'Artifact',
     'Cotton',
     'RAW',
+    'Log',
     'Rock',
+    'Quartz',
     'set',
     'name',
+    'String',
     'COMMON',
-    'Wood',
-    'RARE',
-    'Ribbon',
-    'Metal',
-    'Needles',
-    'Sparkles',
-    'Bronze',
-    'Gold',
-    'EPIC',
-    'Amethyst',
-    'Pendant',
-    'Necklace',
-    'Orb',
-    'Water'
+    'Wood'
 ];
-(function (_0x2155e2, _0x78eef6) {
-    var _0x4f61e1 = function (_0x42ad82) {
-        while (--_0x42ad82) {
-            _0x2155e2['push'](_0x2155e2['shift']());
+(function (_0x33f025, _0xc43ddc) {
+    var _0xc1efc = function (_0x3b00fe) {
+        while (--_0x3b00fe) {
+            _0x33f025['push'](_0x33f025['shift']());
         }
     };
-    _0x4f61e1(++_0x78eef6);
-}(_0x3971, 0x1f4));
-var _0x1771 = function (_0x4d2b38, _0xe97737) {
-    _0x4d2b38 = _0x4d2b38 - 0x0;
-    var _0x4116ab = _0x3971[_0x4d2b38];
-    return _0x4116ab;
+    _0xc1efc(++_0xc43ddc);
+}(_0x4ab9, 0x6e));
+var _0x465a = function (_0x5f0e41, _0x2cbea9) {
+    _0x5f0e41 = _0x5f0e41 - 0x0;
+    var _0x578d5a = _0x4ab9[_0x5f0e41];
+    return _0x578d5a;
 };
-cotton = new CraftingItem(_0x1771('0x0'), 0x0, 0x0, rarity[_0x1771('0x1')]);
-log = new CraftingItem('Log', 0x0, 0x0, rarity[_0x1771('0x1')]);
-rock = new CraftingItem(_0x1771('0x2'), 0x0, 0x0, rarity['RAW']);
-quartz = new CraftingItem('Quartz', 0x0, 0x0, rarity[_0x1771('0x1')]);
-craftingRecipes[_0x1771('0x3')](cotton[_0x1771('0x4')], cotton);
-craftingRecipes[_0x1771('0x3')](log[_0x1771('0x4')], log);
-craftingRecipes['set'](rock[_0x1771('0x4')], rock);
-craftingRecipes[_0x1771('0x3')](quartz['name'], quartz);
+cotton = new CraftingItem(_0x465a('0x0'), 0x0, 0x0, rarity[_0x465a('0x1')]);
+log = new CraftingItem(_0x465a('0x2'), 0x0, 0x0, rarity[_0x465a('0x1')]);
+rock = new CraftingItem(_0x465a('0x3'), 0x0, 0x0, rarity[_0x465a('0x1')]);
+quartz = new CraftingItem(_0x465a('0x4'), 0x0, 0x0, rarity[_0x465a('0x1')]);
+craftingRecipes[_0x465a('0x5')](cotton['name'], cotton);
+craftingRecipes[_0x465a('0x5')](log[_0x465a('0x6')], log);
+craftingRecipes['set'](rock['name'], rock);
+craftingRecipes[_0x465a('0x5')](quartz['name'], quartz);
 var stringReq = [new CraftingRequirement(cotton, 0x3)];
-string = new CraftingItem('String', 0x5, 0x32, rarity[_0x1771('0x5')], stringReq);
-craftingRecipes[_0x1771('0x3')](string[_0x1771('0x4')], string);
+string = new CraftingItem(_0x465a('0x7'), 0x5, 0x32, rarity[_0x465a('0x8')], stringReq);
+craftingRecipes[_0x465a('0x5')](string['name'], string);
 var woodReq = [new CraftingRequirement(log, 0x3)];
-wood = new CraftingItem(_0x1771('0x6'), 0x5, 0x32, rarity[_0x1771('0x7')], woodReq);
-craftingRecipes[_0x1771('0x3')](wood[_0x1771('0x4')], wood);
+wood = new CraftingItem(_0x465a('0x9'), 0x5, 0x32, rarity[_0x465a('0xa')], woodReq);
+craftingRecipes[_0x465a('0x5')](wood['name'], wood);
 var ribbonReq = [
     new CraftingRequirement(string, 0x2),
     new CraftingRequirement(wood, 0x2)
 ];
-ribbon = new CraftingItem(_0x1771('0x8'), 0xf, 0x64, rarity['EPIC'], ribbonReq);
-craftingRecipes['set'](ribbon[_0x1771('0x4')], ribbon);
+ribbon = new CraftingItem(_0x465a('0xb'), 0xf, 0x64, rarity[_0x465a('0xc')], ribbonReq);
+craftingRecipes[_0x465a('0x5')](ribbon[_0x465a('0x6')], ribbon);
 var metalReq = [new CraftingRequirement(rock, 0x3)];
-metal = new CraftingItem(_0x1771('0x9'), 0xf, 0x64, rarity[_0x1771('0x5')], metalReq);
-craftingRecipes['set'](metal[_0x1771('0x4')], metal);
+metal = new CraftingItem(_0x465a('0xd'), 0xf, 0x64, rarity[_0x465a('0x8')], metalReq);
+craftingRecipes['set'](metal[_0x465a('0x6')], metal);
 var needlesReq = [
     new CraftingRequirement(metal, 0x4),
     new CraftingRequirement(ribbon, 0x1)
 ];
-needles = new CraftingItem(_0x1771('0xa'), 0x1e, 0xc8, rarity[_0x1771('0x7')], needlesReq);
-craftingRecipes[_0x1771('0x3')](needles[_0x1771('0x4')], needles);
+needles = new CraftingItem('Needles', 0x1e, 0xc8, rarity[_0x465a('0xa')], needlesReq);
+craftingRecipes[_0x465a('0x5')](needles[_0x465a('0x6')], needles);
 var sparklesReq = [
     new CraftingRequirement(needles, 0x2),
     new CraftingRequirement(ribbon, 0x2)
 ];
-sparkles = new CraftingItem(_0x1771('0xb'), 0x3c, 0x12c, rarity['EPIC'], sparklesReq);
-craftingRecipes[_0x1771('0x3')](sparkles[_0x1771('0x4')], sparkles);
+sparkles = new CraftingItem('Sparkles', 0x3c, 0x12c, rarity[_0x465a('0xc')], sparklesReq);
+craftingRecipes[_0x465a('0x5')](sparkles[_0x465a('0x6')], sparkles);
 var bronzeReq = [new CraftingRequirement(rock, 0x4)];
-bronze = new CraftingItem(_0x1771('0xc'), 0x1e, 0xc8, rarity['COMMON'], bronzeReq);
-craftingRecipes['set'](bronze[_0x1771('0x4')], bronze);
+bronze = new CraftingItem(_0x465a('0xe'), 0x1e, 0xc8, rarity['COMMON'], bronzeReq);
+craftingRecipes[_0x465a('0x5')](bronze[_0x465a('0x6')], bronze);
 var silverReq = [
     new CraftingRequirement(bronze, 0x3),
     new CraftingRequirement(sparkles, 0x1)
 ];
-silver = new CraftingItem('Silver', 0x78, 0x12c, rarity[_0x1771('0x7')], silverReq);
-craftingRecipes[_0x1771('0x3')](silver[_0x1771('0x4')], silver);
+silver = new CraftingItem(_0x465a('0xf'), 0x78, 0x12c, rarity['RARE'], silverReq);
+craftingRecipes['set'](silver[_0x465a('0x6')], silver);
 var goldReq = [
     new CraftingRequirement(silver, 0x2),
     new CraftingRequirement(sparkles, 0x2)
 ];
-gold = new CraftingItem(_0x1771('0xd'), 0x168, 0x1f4, rarity[_0x1771('0xe')], goldReq);
-craftingRecipes['set'](gold[_0x1771('0x4')], gold);
+gold = new CraftingItem(_0x465a('0x10'), 0x168, 0x1f4, rarity[_0x465a('0xc')], goldReq);
+craftingRecipes['set'](gold[_0x465a('0x6')], gold);
 var amethystReq = [new CraftingRequirement(quartz, 0xa)];
-amethyst = new CraftingItem(_0x1771('0xf'), 0x3c, 0x12c, rarity[_0x1771('0x5')], amethystReq);
-craftingRecipes[_0x1771('0x3')](amethyst[_0x1771('0x4')], amethyst);
+amethyst = new CraftingItem(_0x465a('0x11'), 0x3c, 0x12c, rarity[_0x465a('0x8')], amethystReq);
+craftingRecipes[_0x465a('0x5')](amethyst[_0x465a('0x6')], amethyst);
 var pendantReq = [
     new CraftingRequirement(amethyst, 0x7),
     new CraftingRequirement(silver, 0x2)
 ];
-pendant = new CraftingItem(_0x1771('0x10'), 0xb4, 0x1f4, rarity['RARE'], pendantReq);
-craftingRecipes['set'](pendant['name'], pendant);
+pendant = new CraftingItem('Pendant', 0xb4, 0x1f4, rarity[_0x465a('0xa')], pendantReq);
+craftingRecipes[_0x465a('0x5')](pendant[_0x465a('0x6')], pendant);
 var necklaceReq = [
     new CraftingRequirement(pendant, 0x3),
     new CraftingRequirement(gold, 0x2)
 ];
-necklace = new CraftingItem(_0x1771('0x11'), 0x2f8, 0x1f4, rarity[_0x1771('0xe')], necklaceReq);
-craftingRecipes[_0x1771('0x3')](necklace[_0x1771('0x4')], necklace);
+necklace = new CraftingItem(_0x465a('0x12'), 0x2f8, 0x1f4, rarity[_0x465a('0xc')], necklaceReq);
+craftingRecipes['set'](necklace[_0x465a('0x6')], necklace);
 var orbReq = [new CraftingRequirement(quartz, 0x14)];
-orb = new CraftingItem(_0x1771('0x12'), 0x3c, 0x12c, rarity['COMMON'], orbReq);
-craftingRecipes[_0x1771('0x3')](orb['name'], orb);
+orb = new CraftingItem(_0x465a('0x13'), 0x3c, 0x12c, rarity[_0x465a('0x8')], orbReq);
+craftingRecipes[_0x465a('0x5')](orb[_0x465a('0x6')], orb);
 var waterReq = [
     new CraftingRequirement(orb, 0x2),
     new CraftingRequirement(silver, 0x1)
 ];
-water = new CraftingItem(_0x1771('0x13'), 0x168, 0x320, rarity['RARE'], waterReq);
-craftingRecipes['set'](water[_0x1771('0x4')], water);
+water = new CraftingItem('Water', 0x168, 0x320, rarity[_0x465a('0xa')], waterReq);
+craftingRecipes['set'](water[_0x465a('0x6')], water);
 var fireReq = [
     new CraftingRequirement(orb, 0x6),
     new CraftingRequirement(gold, 0x1)
 ];
-fire = new CraftingItem(_0x1771('0x14'), 0x2d0, 0x3e8, rarity[_0x1771('0xe')], fireReq);
-craftingRecipes[_0x1771('0x3')](fire[_0x1771('0x4')], fire);
+fire = new CraftingItem('Fire', 0x2d0, 0x3e8, rarity['EPIC'], fireReq);
+craftingRecipes[_0x465a('0x5')](fire['name'], fire);
 var waterstoneReq = [
     new CraftingRequirement(water, 0x2),
     new CraftingRequirement(ribbon, 0xa)
 ];
-waterstone = new CraftingItem(_0x1771('0x15'), 0x2d0, 0x5dc, rarity['COMMON'], waterstoneReq);
-craftingRecipes[_0x1771('0x3')](waterstone[_0x1771('0x4')], waterstone);
+waterstone = new CraftingItem(_0x465a('0x14'), 0x2d0, 0x5dc, rarity[_0x465a('0x8')], waterstoneReq);
+craftingRecipes[_0x465a('0x5')](waterstone[_0x465a('0x6')], waterstone);
 var firestoneReq = [
     new CraftingRequirement(fire, 0x1),
     new CraftingRequirement(sparkles, 0x2)
 ];
-firestone = new CraftingItem(_0x1771('0x16'), 0x2d0, 0x5dc, rarity[_0x1771('0x7')], firestoneReq);
-craftingRecipes['set'](firestone['name'], firestone);
+firestone = new CraftingItem(_0x465a('0x15'), 0x2d0, 0x5dc, rarity[_0x465a('0xa')], firestoneReq);
+craftingRecipes[_0x465a('0x5')](firestone[_0x465a('0x6')], firestone);
 var elementstoneReq = [
     new CraftingRequirement(firestone, 0x1),
     new CraftingRequirement(waterstone, 0x1)
 ];
-elementstone = new CraftingItem(_0x1771('0x17'), 0x5a0, 0x1388, rarity[_0x1771('0x18')], elementstoneReq);
-craftingRecipes['set'](elementstone[_0x1771('0x4')], elementstone);
+elementstone = new CraftingItem('Elementstone', 0x5a0, 0x1388, rarity[_0x465a('0x16')], elementstoneReq);
+craftingRecipes[_0x465a('0x5')](elementstone[_0x465a('0x6')], elementstone);
 var artifactReq = [
     new CraftingRequirement(elementstone, 0x1),
     new CraftingRequirement(necklace, 0x1)
 ];
-artifact = new CraftingItem(_0x1771('0x19'), 0x10e0, 0x2710, rarity['LEGENDARY'], artifactReq);
-craftingRecipes[_0x1771('0x3')](artifact[_0x1771('0x4')], artifact);
+artifact = new CraftingItem(_0x465a('0x17'), 0x10e0, 0x2710, rarity[_0x465a('0x16')], artifactReq);
+craftingRecipes[_0x465a('0x5')](artifact[_0x465a('0x6')], artifact);
