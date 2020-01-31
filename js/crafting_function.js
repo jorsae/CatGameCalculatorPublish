@@ -1,62 +1,62 @@
-var _0x256e = [
-    'GhVJN',
-    'liKtN',
-    'sYMbK',
+var _0x124b = [
+    'BpFJo',
+    'wkqVK',
+    'length',
+    'craftingItem',
+    'xASPE',
     'craftingRequirements',
-    'set',
-    'name',
-    'TdPZI',
     'quantity',
-    'get'
+    'get',
+    'set'
 ];
-(function (_0x3b2bd1, _0x57bec6) {
-    var _0x9cbb7 = function (_0x4dbf83) {
-        while (--_0x4dbf83) {
-            _0x3b2bd1['push'](_0x3b2bd1['shift']());
+(function (_0x25d95e, _0x522b88) {
+    var _0x257a47 = function (_0x427748) {
+        while (--_0x427748) {
+            _0x25d95e['push'](_0x25d95e['shift']());
         }
     };
-    _0x9cbb7(++_0x57bec6);
-}(_0x256e, 0xbf));
-var _0x4b02 = function (_0x30059d, _0x2b27d0) {
-    _0x30059d = _0x30059d - 0x0;
-    var _0x437058 = _0x256e[_0x30059d];
-    return _0x437058;
+    _0x257a47(++_0x522b88);
+}(_0x124b, 0x1b1));
+var _0x1dc9 = function (_0xd22165, _0x1e147a) {
+    _0xd22165 = _0xd22165 - 0x0;
+    var _0x3fab22 = _0x124b[_0xd22165];
+    return _0x3fab22;
 };
-function getCraftingRequirements(_0x2813f6, _0x2c8b3e = 0x1) {
-    var _0x13411d = {
-        'sYMbK': function (_0x3c5da9, _0x55e7dd) {
-            return _0x3c5da9 === _0x55e7dd;
+function getCraftingRequirements(_0x5a3ba9, _0x49708e = 0x1) {
+    var _0x29e174 = {
+        'wkqVK': function (_0x140df1, _0x2ee646) {
+            return _0x140df1 === _0x2ee646;
         },
-        'YWADR': function (_0x143a0a, _0x3aef0e) {
-            return _0x143a0a < _0x3aef0e;
+        'xASPE': function (_0x747c95, _0x5801b3) {
+            return _0x747c95 * _0x5801b3;
         },
-        'TdPZI': function (_0x1e7947, _0x5370e4) {
-            return _0x1e7947 * _0x5370e4;
+        'mKbto': function (_0x3cef40, _0x105249, _0x31b011) {
+            return _0x3cef40(_0x105249, _0x31b011);
         },
-        'GhVJN': function (_0x19d314, _0x2eb36b) {
-            return _0x19d314 === _0x2eb36b;
+        'WTawN': function (_0x28bed, _0x161071, _0x14d0d1) {
+            return _0x28bed(_0x161071, _0x14d0d1);
         },
-        'liKtN': function (_0x31238a, _0x17b8a1, _0x153a2b) {
-            return _0x31238a(_0x17b8a1, _0x153a2b);
+        'BpFJo': function (_0x3f7857, _0x2f5362) {
+            return _0x3f7857 + _0x2f5362;
         }
     };
-    if (_0x13411d[_0x4b02('0x0')](_0x2813f6[_0x4b02('0x1')], null)) {
+    if (_0x29e174[_0x1dc9('0x0')](_0x5a3ba9['craftingRequirements'], null)) {
         return;
     }
-    currentCraft[_0x4b02('0x2')](_0x2813f6[_0x4b02('0x3')], _0x2c8b3e);
-    for (var _0x3997a1 = 0x0; _0x13411d['YWADR'](_0x3997a1, _0x2813f6[_0x4b02('0x1')]['length']); _0x3997a1++) {
-        var _0x26ebac = _0x2813f6['craftingRequirements'][_0x3997a1]['craftingItem'][_0x4b02('0x3')];
-        var _0x44fa1e = _0x13411d[_0x4b02('0x4')](_0x2813f6[_0x4b02('0x1')][_0x3997a1][_0x4b02('0x5')], _0x2c8b3e);
-        var _0x25b064 = currentCraft[_0x4b02('0x6')](_0x26ebac);
-        if (_0x13411d[_0x4b02('0x7')](_0x25b064, undefined)) {
-            var _0x4ca596 = craftingRecipes[_0x4b02('0x6')](_0x26ebac);
-            _0x13411d[_0x4b02('0x8')](getCraftingRequirements, _0x4ca596, _0x44fa1e);
-            currentCraft[_0x4b02('0x2')](_0x26ebac, _0x44fa1e);
+    currentCraft['set'](_0x5a3ba9['name'], _0x49708e);
+    for (var _0x463442 = 0x0; _0x463442 < _0x5a3ba9['craftingRequirements'][_0x1dc9('0x1')]; _0x463442++) {
+        var _0x2fbc7e = _0x5a3ba9['craftingRequirements'][_0x463442][_0x1dc9('0x2')]['name'];
+        var _0x578cf7 = _0x29e174[_0x1dc9('0x3')](_0x5a3ba9[_0x1dc9('0x4')][_0x463442][_0x1dc9('0x5')], _0x49708e);
+        var _0x6136b3 = currentCraft[_0x1dc9('0x6')](_0x2fbc7e);
+        if (_0x29e174['wkqVK'](_0x6136b3, undefined)) {
+            var _0x1b967b = craftingRecipes['get'](_0x2fbc7e);
+            _0x29e174['mKbto'](getCraftingRequirements, _0x1b967b, _0x578cf7);
+            currentCraft[_0x1dc9('0x7')](_0x2fbc7e, _0x578cf7);
         } else {
-            var _0x4ca596 = craftingRecipes[_0x4b02('0x6')](_0x26ebac);
-            getCraftingRequirements(_0x4ca596, _0x44fa1e);
-            var _0x557692 = currentCraft[_0x4b02('0x6')](_0x26ebac);
-            currentCraft[_0x4b02('0x2')](_0x26ebac, _0x557692 + _0x44fa1e);
+            var _0x1b967b = craftingRecipes['get'](_0x2fbc7e);
+            _0x29e174['WTawN'](getCraftingRequirements, _0x1b967b, _0x578cf7);
+            var _0xea4a03 = currentCraft['get'](_0x2fbc7e);
+            currentCraft[_0x1dc9('0x7')](_0x2fbc7e, _0x29e174[_0x1dc9('0x8')](_0xea4a03, _0x578cf7));
         }
     }
     return currentCraft;
