@@ -1,30 +1,30 @@
-var _0x1f0f = [
+var _0x2abb = [
+    'common',
+    'epic',
     'legendary',
-    'hidden',
-    'raw',
-    'common'
+    'raw'
 ];
-(function (_0x2d69fb, _0xdb5cf0) {
-    var _0x590869 = function (_0x51c817) {
-        while (--_0x51c817) {
-            _0x2d69fb['push'](_0x2d69fb['shift']());
+(function (_0x572b58, _0x12f7e4) {
+    var _0x23dc4e = function (_0x5acc1b) {
+        while (--_0x5acc1b) {
+            _0x572b58['push'](_0x572b58['shift']());
         }
     };
-    _0x590869(++_0xdb5cf0);
-}(_0x1f0f, 0xb1));
-var _0x4e48 = function (_0x5d4fa3, _0x322bae) {
-    _0x5d4fa3 = _0x5d4fa3 - 0x0;
-    var _0x5407ab = _0x1f0f[_0x5d4fa3];
-    return _0x5407ab;
+    _0x23dc4e(++_0x12f7e4);
+}(_0x2abb, 0x1ab));
+var _0x1f9d = function (_0x23ef95, _0x190d82) {
+    _0x23ef95 = _0x23ef95 - 0x0;
+    var _0x2a5e02 = _0x2abb[_0x23ef95];
+    return _0x2a5e02;
 };
 var craftingRecipes = new Map();
 const outputRows = 0x4;
 var currentCraft = new Map();
 const rarity = {
-    'HIDDEN': _0x4e48('0x0'),
-    'RAW': _0x4e48('0x1'),
-    'COMMON': _0x4e48('0x2'),
+    'HIDDEN': 'hidden',
+    'RAW': _0x1f9d('0x0'),
+    'COMMON': _0x1f9d('0x1'),
     'RARE': 'rare',
-    'EPIC': 'epic',
-    'LEGENDARY': _0x4e48('0x3')
+    'EPIC': _0x1f9d('0x2'),
+    'LEGENDARY': _0x1f9d('0x3')
 };
