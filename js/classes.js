@@ -1,209 +1,203 @@
-var _0x2047 = [
+var _0x4073 = [
     'craftingItem',
-    'toString',
-    'NpmSE',
-    'name',
     'quantity',
-    '3|0|1|4|2',
-    'IICnE',
-    'baseCost',
-    'craftingRequirements',
-    'rarity',
+    'toString',
+    'TlWUD',
+    'name',
     '\x20:\x20',
-    'OJDBp',
-    'LbNSb',
-    'WAGrM',
-    'ozdUr',
-    'nIHnh',
-    'WeeMU',
-    'minutes,\x20',
     'craftingTime',
-    'RAW',
-    'COMMON',
-    'RARE',
-    'EPIC',
+    'baseCost',
+    'rarity',
+    'coins.\x20Crafting\x20Requirement:\x20',
+    'ImVkb',
+    'craftingRequirements',
+    'length',
+    'Wspyo',
+    'QIlUL',
+    'MvMap',
+    'cGYfF',
+    'OAiry',
+    'VxfHx',
+    '0|4|2|3|1',
+    'getRarityValue',
+    'HIDDEN',
     'getCrafts',
-    'jsUFa',
     'ceil',
-    'AVUGZ',
-    'GNdMn',
+    'Qqbqm',
     'getItemsPerCraft',
-    'OfsEa',
-    'ugFgb',
-    'lqEQn',
+    'mPHLv',
+    'vxQgg',
     'getCost',
-    'GOwwJ',
-    'hKtTM',
+    'NshiA',
+    'XmDWT',
     'pow'
 ];
-(function (_0x229530, _0x5293e0) {
-    var _0x5914dc = function (_0x4fbaad) {
-        while (--_0x4fbaad) {
-            _0x229530['push'](_0x229530['shift']());
+(function (_0x2974a7, _0x26dece) {
+    var _0xcdfe78 = function (_0x5548f7) {
+        while (--_0x5548f7) {
+            _0x2974a7['push'](_0x2974a7['shift']());
         }
     };
-    _0x5914dc(++_0x5293e0);
-}(_0x2047, 0xd8));
-var _0x399e = function (_0x1a026c, _0x2492de) {
-    _0x1a026c = _0x1a026c - 0x0;
-    var _0x2d8f05 = _0x2047[_0x1a026c];
-    return _0x2d8f05;
+    _0xcdfe78(++_0x26dece);
+}(_0x4073, 0x120));
+var _0x3ea6 = function (_0x12b5b0, _0x14ac67) {
+    _0x12b5b0 = _0x12b5b0 - 0x0;
+    var _0x27ff3b = _0x4073[_0x12b5b0];
+    return _0x27ff3b;
 };
 class CraftingRequirement {
-    constructor(_0x57cfd3, _0x23849a) {
-        this[_0x399e('0x0')] = _0x57cfd3;
-        this['quantity'] = _0x23849a;
+    constructor(_0x30d932, _0x34808c) {
+        this[_0x3ea6('0x0')] = _0x30d932;
+        this[_0x3ea6('0x1')] = _0x34808c;
     }
-    [_0x399e('0x1')]() {
-        var _0x55fb97 = {
-            'NpmSE': function (_0x1a6111, _0x4350e6) {
-                return _0x1a6111 + _0x4350e6;
+    [_0x3ea6('0x2')]() {
+        var _0x49715e = {
+            'TlWUD': function (_0x4433d3, _0x2ca6c8) {
+                return _0x4433d3 + _0x2ca6c8;
             }
         };
-        _0x55fb97[_0x399e('0x2')](this[_0x399e('0x0')][_0x399e('0x3')] + '\x20:\x20', this[_0x399e('0x4')]);
+        _0x49715e[_0x3ea6('0x3')](_0x49715e[_0x3ea6('0x3')](this[_0x3ea6('0x0')][_0x3ea6('0x4')], _0x3ea6('0x5')), this[_0x3ea6('0x1')]);
     }
 }
 class CraftingItem {
-    constructor(_0x640d58, _0x586805, _0x1c4a80, _0x5c526b, _0x1e8bb5 = null) {
-        var _0x31e7e4 = { 'IICnE': _0x399e('0x5') };
-        var _0x145b43 = _0x31e7e4[_0x399e('0x6')]['split']('|'), _0x5c0b2f = 0x0;
+    constructor(_0x236fae, _0x4692b4, _0x423421, _0x1aa9ee, _0x593fdc = null) {
+        this['name'] = _0x236fae;
+        this[_0x3ea6('0x6')] = _0x4692b4;
+        this[_0x3ea6('0x7')] = _0x423421;
+        this[_0x3ea6('0x8')] = _0x1aa9ee;
+        this['craftingRequirements'] = _0x593fdc;
+    }
+    [_0x3ea6('0x2')]() {
+        var _0xf422f2 = {
+            'ImVkb': function (_0x4a7e49, _0x18d666) {
+                return _0x4a7e49 < _0x18d666;
+            },
+            'Wspyo': function (_0x563400, _0x45324f) {
+                return _0x563400 + _0x45324f;
+            },
+            'jGkan': function (_0x1c0300, _0x1901ff) {
+                return _0x1c0300 + _0x1901ff;
+            },
+            'QIlUL': function (_0x1fc092, _0x54966a) {
+                return _0x1fc092 + _0x54966a;
+            },
+            'MvMap': function (_0x100d00, _0x321f4e) {
+                return _0x100d00 + _0x321f4e;
+            },
+            'cGYfF': function (_0x283472, _0x5fe5a6) {
+                return _0x283472 + _0x5fe5a6;
+            },
+            'OAiry': 'minutes,\x20',
+            'VxfHx': _0x3ea6('0x9')
+        };
+        var _0xed643e = '';
+        for (var _0x376ecf = 0x0; _0xf422f2[_0x3ea6('0xa')](_0x376ecf, this[_0x3ea6('0xb')][_0x3ea6('0xc')]); _0x376ecf++) {
+            _0xed643e += _0xf422f2[_0x3ea6('0xd')](_0xf422f2['jGkan'](_0xf422f2[_0x3ea6('0xe')](this[_0x3ea6('0xb')][_0x376ecf][_0x3ea6('0x0')][_0x3ea6('0x4')], _0x3ea6('0x5')), this[_0x3ea6('0xb')][_0x376ecf][_0x3ea6('0x1')]), '\x20');
+        }
+        return _0xf422f2['MvMap'](_0xf422f2[_0x3ea6('0xf')](_0xf422f2[_0x3ea6('0x10')](_0xf422f2[_0x3ea6('0x10')](_0xf422f2[_0x3ea6('0x10')](_0xf422f2[_0x3ea6('0x10')](this[_0x3ea6('0x4')], ',\x20'), this[_0x3ea6('0x6')]), _0xf422f2[_0x3ea6('0x11')]), this[_0x3ea6('0x7')]), _0xf422f2[_0x3ea6('0x12')]), _0xed643e);
+    }
+}
+class CraftingItemOutput {
+    constructor(_0x33e78b, _0x34f243, _0x40db23, _0x351936, _0x325a7b) {
+        var _0x1350fc = { 'BXyZq': _0x3ea6('0x13') };
+        var _0x5c7c6b = _0x1350fc['BXyZq']['split']('|'), _0x52cd72 = 0x0;
         while (!![]) {
-            switch (_0x145b43[_0x5c0b2f++]) {
+            switch (_0x5c7c6b[_0x52cd72++]) {
             case '0':
-                this['craftingTime'] = _0x586805;
+                this[_0x3ea6('0x4')] = _0x33e78b;
                 continue;
             case '1':
-                this[_0x399e('0x7')] = _0x1c4a80;
+                this['quantity'] = _0x325a7b;
                 continue;
             case '2':
-                this[_0x399e('0x8')] = _0x1e8bb5;
+                this[_0x3ea6('0x7')] = _0x40db23;
                 continue;
             case '3':
-                this[_0x399e('0x3')] = _0x640d58;
+                this[_0x3ea6('0x8')] = _0x351936;
                 continue;
             case '4':
-                this[_0x399e('0x9')] = _0x5c526b;
+                this[_0x3ea6('0x6')] = _0x34f243;
                 continue;
             }
             break;
         }
     }
-    ['toString']() {
-        var _0x2915b7 = {
-            'pnbRp': function (_0xc645e5, _0x28ba9f) {
-                return _0xc645e5 < _0x28ba9f;
-            },
-            'OJDBp': function (_0x565ed3, _0xe4e4dd) {
-                return _0x565ed3 + _0xe4e4dd;
-            },
-            'lFZkm': function (_0x1cad43, _0x10bc64) {
-                return _0x1cad43 + _0x10bc64;
-            },
-            'LbNSb': _0x399e('0xa'),
-            'WAGrM': function (_0x7ed23, _0x588166) {
-                return _0x7ed23 + _0x588166;
-            },
-            'ozdUr': function (_0x9e366d, _0x52c0f4) {
-                return _0x9e366d + _0x52c0f4;
-            },
-            'nIHnh': function (_0x1b4e67, _0x23adfc) {
-                return _0x1b4e67 + _0x23adfc;
-            },
-            'WeeMU': function (_0x3eec84, _0x28a49b) {
-                return _0x3eec84 + _0x28a49b;
-            }
-        };
-        var _0x35b2cd = '';
-        for (var _0xf7c300 = 0x0; _0x2915b7['pnbRp'](_0xf7c300, this[_0x399e('0x8')]['length']); _0xf7c300++) {
-            _0x35b2cd += _0x2915b7[_0x399e('0xb')](_0x2915b7['lFZkm'](this['craftingRequirements'][_0xf7c300]['craftingItem'][_0x399e('0x3')], _0x2915b7[_0x399e('0xc')]), this[_0x399e('0x8')][_0xf7c300]['quantity']) + '\x20';
-        }
-        return _0x2915b7[_0x399e('0xd')](_0x2915b7[_0x399e('0xe')](_0x2915b7[_0x399e('0xf')](_0x2915b7[_0x399e('0x10')](_0x2915b7[_0x399e('0x10')](this[_0x399e('0x3')], ',\x20'), this['craftingTime']) + _0x399e('0x11'), this[_0x399e('0x7')]), 'coins.\x20Crafting\x20Requirement:\x20'), _0x35b2cd);
-    }
-}
-class CraftingItemOutput {
-    constructor(_0x2fc93b, _0x4c8ce7, _0x303b4b, _0x4d5596, _0x565829) {
-        this[_0x399e('0x3')] = _0x2fc93b;
-        this[_0x399e('0x12')] = _0x4c8ce7;
-        this[_0x399e('0x7')] = _0x303b4b;
-        this[_0x399e('0x9')] = _0x4d5596;
-        this[_0x399e('0x4')] = _0x565829;
-    }
-    ['getRarityValue']() {
-        switch (this[_0x399e('0x9')]) {
-        case rarity['HIDDEN']:
+    [_0x3ea6('0x14')]() {
+        switch (this[_0x3ea6('0x8')]) {
+        case rarity[_0x3ea6('0x15')]:
             return 0x0;
-        case rarity[_0x399e('0x13')]:
+        case rarity['RAW']:
             return 0x1;
         default:
-        case rarity[_0x399e('0x14')]:
+        case rarity['COMMON']:
             return 0x2;
-        case rarity[_0x399e('0x15')]:
+        case rarity['RARE']:
             return 0x3;
-        case rarity[_0x399e('0x16')]:
+        case rarity['EPIC']:
             return 0x4;
         case rarity['LEGENDARY']:
             return 0x5;
         }
     }
-    [_0x399e('0x17')](_0x17e35c) {
-        var _0x410dfe = {
-            'jsUFa': function (_0x1f9ffb, _0x45eb1b) {
-                return _0x1f9ffb < _0x45eb1b;
+    [_0x3ea6('0x16')](_0xf9579b) {
+        var _0x5accaa = {
+            'tCZtB': function (_0x4b54d1, _0x5eeee0) {
+                return _0x4b54d1 < _0x5eeee0;
             },
-            'AVUGZ': function (_0x5846c0, _0x5b5605) {
-                return _0x5846c0 / _0x5b5605;
+            'Qqbqm': function (_0x23655b, _0x2c42a5) {
+                return _0x23655b / _0x2c42a5;
             },
-            'GNdMn': function (_0x335b83, _0x32cb4a) {
-                return _0x335b83 > _0x32cb4a;
+            'TjiTM': function (_0x3c0b68, _0x564cb3) {
+                return _0x3c0b68 > _0x564cb3;
             }
         };
-        var _0x44a938 = 0x1;
-        if (_0x410dfe[_0x399e('0x18')](this[_0x399e('0x12')], _0x17e35c)) {
-            _0x44a938 = Math[_0x399e('0x19')](_0x410dfe[_0x399e('0x1a')](_0x17e35c, this[_0x399e('0x12')]));
+        var _0xcbc3fc = 0x1;
+        if (_0x5accaa['tCZtB'](this[_0x3ea6('0x6')], _0xf9579b)) {
+            _0xcbc3fc = Math[_0x3ea6('0x17')](_0x5accaa[_0x3ea6('0x18')](_0xf9579b, this[_0x3ea6('0x6')]));
         }
-        if (_0x410dfe[_0x399e('0x1b')](_0x44a938, this[_0x399e('0x4')])) {
-            return this[_0x399e('0x4')];
+        if (_0x5accaa['TjiTM'](_0xcbc3fc, this['quantity'])) {
+            return this['quantity'];
         }
-        return _0x44a938;
+        return _0xcbc3fc;
     }
-    [_0x399e('0x1c')](_0x1e492c) {
-        var _0x24737b = {
-            'OfsEa': function (_0x25146a, _0x1827cb) {
-                return _0x25146a < _0x1827cb;
+    [_0x3ea6('0x19')](_0x2ce073) {
+        var _0x4e801d = {
+            'mPHLv': function (_0x594ab0, _0x297f9e) {
+                return _0x594ab0 < _0x297f9e;
             },
-            'ugFgb': function (_0x4271b0, _0x2cbf7e) {
-                return _0x4271b0 > _0x2cbf7e;
+            'AiMYV': function (_0x30a0f5, _0xe761f0) {
+                return _0x30a0f5 / _0xe761f0;
             },
-            'lqEQn': function (_0x3ceb6b, _0x554d77) {
-                return _0x3ceb6b / _0x554d77;
+            'Bajos': function (_0x3bc86e, _0x21c6a7) {
+                return _0x3bc86e > _0x21c6a7;
+            },
+            'vxQgg': function (_0x78c021, _0x2db2e5) {
+                return _0x78c021 / _0x2db2e5;
             }
         };
-        var _0x2f0caf = 0x1;
-        if (_0x24737b[_0x399e('0x1d')](this['craftingTime'], _0x1e492c)) {
-            _0x2f0caf = Math[_0x399e('0x19')](_0x1e492c / this[_0x399e('0x12')]);
+        var _0x3f3f0e = 0x1;
+        if (_0x4e801d[_0x3ea6('0x1a')](this[_0x3ea6('0x6')], _0x2ce073)) {
+            _0x3f3f0e = Math[_0x3ea6('0x17')](_0x4e801d['AiMYV'](_0x2ce073, this['craftingTime']));
         }
-        if (_0x24737b[_0x399e('0x1e')](_0x2f0caf, this[_0x399e('0x4')])) {
-            _0x2f0caf = this[_0x399e('0x4')];
+        if (_0x4e801d['Bajos'](_0x3f3f0e, this[_0x3ea6('0x1')])) {
+            _0x3f3f0e = this[_0x3ea6('0x1')];
         }
-        return Math[_0x399e('0x19')](_0x24737b[_0x399e('0x1f')](this[_0x399e('0x4')], _0x2f0caf));
+        return Math[_0x3ea6('0x17')](_0x4e801d[_0x3ea6('0x1b')](this[_0x3ea6('0x1')], _0x3f3f0e));
     }
-    [_0x399e('0x20')](_0x12601d) {
-        var _0x1c8763 = {
-            'GOwwJ': function (_0x5300d3, _0x475d1e) {
-                return _0x5300d3 * _0x475d1e;
+    [_0x3ea6('0x1c')](_0x575b7b) {
+        var _0x42ab6b = {
+            'NDyvH': function (_0xc00dc2, _0x25caa1) {
+                return _0xc00dc2 * _0x25caa1;
             },
-            'hKtTM': function (_0x2ccf0d, _0x12b1de) {
-                return _0x2ccf0d * _0x12b1de;
+            'NshiA': function (_0x2b13e1, _0x520d2b) {
+                return _0x2b13e1 / _0x520d2b;
             },
-            'EJgoX': function (_0x4bb945, _0x480ab5) {
-                return _0x4bb945 / _0x480ab5;
-            },
-            'WCpiE': function (_0x215d42, _0x1544d9) {
-                return _0x215d42 + _0x1544d9;
+            'XmDWT': function (_0x46c756, _0x3d3744) {
+                return _0x46c756 + _0x3d3744;
             }
         };
-        var _0x555923 = this[_0x399e('0x1c')](_0x12601d);
-        var _0x201993 = this[_0x399e('0x17')](_0x12601d);
-        return _0x1c8763[_0x399e('0x21')](_0x1c8763[_0x399e('0x22')](_0x1c8763['EJgoX'](this[_0x399e('0x7')], 0x4), _0x1c8763['WCpiE'](Math[_0x399e('0x23')](_0x555923, 0x2), _0x1c8763[_0x399e('0x22')](0x3, _0x555923))), _0x201993);
+        var _0x145df2 = this[_0x3ea6('0x19')](_0x575b7b);
+        var _0x3a3610 = this[_0x3ea6('0x16')](_0x575b7b);
+        return _0x42ab6b['NDyvH'](_0x42ab6b[_0x3ea6('0x1d')](this['baseCost'], 0x4), _0x42ab6b[_0x3ea6('0x1e')](Math[_0x3ea6('0x1f')](_0x145df2, 0x2), 0x3 * _0x145df2)) * _0x3a3610;
     }
 }
