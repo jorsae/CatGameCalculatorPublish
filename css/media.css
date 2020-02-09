@@ -1,6 +1,6 @@
 @media all and (max-width: 1400px) {
     .crafting-container{
-        zoom: 150%;
+        zoom: 125%;
         min-width: 75%
     }
 
@@ -10,6 +10,11 @@
 
     .output-container{
         max-width: 100%;
+    }
+
+    table{
+        min-width: 100%;
+        font-size: 22px;
     }
 
     .fit-content{
