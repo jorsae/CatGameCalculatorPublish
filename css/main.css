@@ -7,6 +7,38 @@
     z-index: -1000;
 }
 
+/* CSS for cookie policy banner */
+.cookie-paragraph{
+    margin: 0 0 0 0;
+}
+
+.cookie-policy{
+    display: none;
+    flex-direction: wrap;
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    width: 70%;
+    border: solid 2px darkgray;
+}
+
+.cookie-policy-close{
+    margin: 4px;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #2de3f5, #169ed1);
+    border: none;
+    text-align: center;
+}
+
+.cookie-policy-close:hover{
+    color: #000000;
+    cursor: pointer;
+}
+
 body{
     background-color: #74270c;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -40,8 +72,8 @@ nav ul li{
     margin: 4px;
 }
 
-nav ul li:hover{
-    background-color: #4bbeff;
+nav ul li a:hover{
+    color: #000000;
 }
 
 a{
@@ -133,6 +165,14 @@ p{
 .crafting-item-amount{
     margin-right: 32px;
     font-size: 24px;
+    width: 40px;
+    background: transparent;
+    text-align: center;
+    color: #ffffff;
+    border:none;
+    -webkit-box-shadow: inset 0px 0px 8px #333333;
+    -moz-box-shadow: inset 0px 0px 8px #333333;
+    box-shadow: inset 0px 0px 8px #333333;
 }
 
 .crafting-items-info{
@@ -313,4 +353,31 @@ tbody tr:nth-child(even){
 /* feedback.html */
 .feedback{
     text-align: center;
+}
+
+/* privacy.html */
+.privacy{
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.privacy ul li{
+    list-style-type: none;
+}
+
+/* Removes up/down arrows on 'input type="number"' */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
