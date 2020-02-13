@@ -11,11 +11,6 @@
         max-width: 100%;
     }
 
-    table{
-        min-width: 100%;
-        font-size: 22px;
-    }
-
     .fit-content{
         max-width: 75%;
     }
@@ -24,17 +19,37 @@
         width: 64px;
         height: 64px;
     }
+
+    .cookie-policy, .cookie-policy-close{
+        font-size: 18px;
+    }
 }
 
 @media all and (max-width: 1200px) {
     .calculator-text, .calculator-body button{
         font-size: 42px;
     }
+
+    table{
+        min-width: 80vw;
+    }
+
+    .cookie-policy, .cookie-policy-close{
+        font-size: 1em;
+    }
 }
 
 @media all and (max-width: 1000px) {
     .calculator-text, .calculator-body button{
         font-size: 38px;
+    }
+
+    table{
+        min-width: 90vw;
+    }
+
+    .cookie-policy, .cookie-policy-close{
+        font-size: 24px;
     }
 }
 
