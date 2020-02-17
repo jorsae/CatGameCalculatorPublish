@@ -1,65 +1,99 @@
-@media all and (max-width: 1400px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .topnav{
+        font-size: 2em;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.hamburger-menu {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .hamburger-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* This is because the google play image has white-space on both edges, and apple-icon does not */
+    .google-play-icon{
+        margin-left: -16px;
+    }
+}
+
+/* SUPER SMALL devices. Mostly for iPhone 5/SE */
+@media only screen and (max-width: 340px) {
+    .topnav{
+        font-size: 1.75em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     .crafting-container{
-        min-width: 75%
-    }
-
-    .calculator-text, .calculator-body button{
-        font-size: 48px;
-    }
-
-    .output-container{
-        max-width: 100%;
-    }
-
-    .fit-content{
-        max-width: 75%;
-    }
-
-    .arrow{
-        width: 64px;
-        height: 64px;
-    }
-
-    .cookie-policy, .cookie-policy-close{
-        font-size: 18px;
-    }
-}
-
-@media all and (max-width: 1200px) {
-    .calculator-text, .calculator-body button{
-        font-size: 42px;
-    }
-
-    table{
-        min-width: 80vw;
-    }
-
-    .cookie-policy, .cookie-policy-close{
-        font-size: 1em;
-    }
-}
-
-@media all and (max-width: 1000px) {
-    .calculator-text, .calculator-body button{
-        font-size: 38px;
-    }
-
-    table{
-        min-width: 90vw;
-    }
-
-    .cookie-policy, .cookie-policy-close{
-        font-size: 24px;
-    }
-}
-
-@media all and (max-width: 800px) {
-    .calculator-container{
-        min-width: 70%;
+        width: 90vw;
         max-width: 90%;
     }
 
-    .calculator-text, .calculator-body button{
-        font-size: 32px;
+    .crafting-time-input{
+        width: 25vw;
+    }
+
+    .output-table{
+        width: 90vw;
+        max-width: 90%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .crafting-container{
+        width: 80vw;
+        max-width: 80%;
+    }
+
+    .crafting-time-input{
+        width: 22vw;
+    }
+
+    .output-table{
+        width: 80vw;
+        max-width: 80%;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .crafting-container{
+        width: 70vw;
+        max-width: 70%;
+    }
+
+    .output-table{
+        width: 70vw;
+        max-width: 70%;
+    }
+}
+
+/* Wide screens */
+@media only screen and (min-width: 1400px) {
+    .output-table{
+        width: 60vw;
+        max-width: 60%;
     }
 }

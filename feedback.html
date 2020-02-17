@@ -4,9 +4,11 @@
         <meta charset="utf-8" />
         <title> Cat Game Calculator</title>
         <meta name="description" content="Cat Game Calculator feedback">
-        <script type="text/javascript" src="js/cookie.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/all.js" defer></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157531722-1"></script>
         <script>
@@ -18,14 +20,15 @@
         </script>
     </head>
     <body>
-        <p class="beta">Beta version</p>
-        <nav>
-            <ul>
-                <li><a href="./">Cat Game Calculator</a></li><!--
-                --><li><a href="about.html">About</a></li><!--
-                --><li><a href="feedback.html">Feedback</a></li>
-            </ul>
-        </nav>
+        <div class="topnav" id="topNav">
+            <a href="./">Cat Game Calculator</a>
+            <a href="about.html">About</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="javascript:void(0);" onclick="hamburgerMenu()" class="hamburger-menu">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
         <div id="cookiePolicyBanner" class="cookie-policy">
             <p class="cookie-paragraph">This site uses cookies to improve your user experience. By using CatGameCalcuator, you agree to our <a href="privacy.html">use of cookies</a>&nbsp;&nbsp;&nbsp;</p>
             <button id="cookieAccept" class="cookie-policy-close">Accept</button>
@@ -33,7 +36,6 @@
 
         <h1 class="text-center">Feedback / Bug report</h1>
         <div class="feedback">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkb7B7ChF_G_FW1KINxHUQ0hr5ztFktRw2skp-NTRu6ilenw/viewform?embedded=true" width="640" height="1011" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkb7B7ChF_G_FW1KINxHUQ0hr5ztFktRw2skp-NTRu6ilenw/viewform?embedded=true" width="350" height="1011" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
-
 </html>

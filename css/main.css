@@ -1,12 +1,3 @@
-/* TODO: Temporary just a marker for beta version */
-.beta{
-    position: absolute;
-    font-size: 24px;
-    right: 1%;
-    color: red;
-    z-index: -1000;
-}
-
 /* CSS for cookie policy banner */
 .cookie-paragraph{
     margin: 0 0 0 0;
@@ -50,42 +41,26 @@
 body{
     background-color: #74270c;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("../images/background-cat-left.png"), url("../images/background-cat-right.png");
-    background-position: top 45px left, top 45px right;
-    background-size: 25vw;
-    background-repeat: no-repeat;
     color: #ffffff;
 }
 
-/* Menu */
-nav{
-    display: flex;
-    justify-content: left;
+/* CSS for Main Menu */
+.topnav{
+    float: left;
     text-decoration: none;
-    text-indent: 1em;
-    font-size: 24px;
+    overflow: none;
+    width: 100vw;
+    max-width: 100%;
     border-bottom: solid 2px black;
-    width: 100%;
+    font-size: 2em;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    background-color: #74270c;
-    margin: 4px;
-}
-
-nav ul li a:hover{
-    color: #000000;
-}
-
-a{
+.topnav a{
     color: #ffffff;
+}
+
+.topnav .hamburger-menu {
+    display: none;
 }
 
 p{
@@ -104,99 +79,63 @@ p{
 
 /* Crafting item CSS */
 .crafting-container{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: fit-content;
+    display: block;
+    width: 100vw;
     max-width: 100%;
+    overflow: visible;
+    text-align: center;
+    margin: auto;
+}
+
+.crafting-container h2{
+    margin-bottom: 0px;
+    margin-top: 0.5em;
 }
 
 .crafting-tier{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.crafting-item{
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 33.33vw;
 }
 
-.crafting-tier h2{
-    text-align: center;
-    margin: 0px;
-}
-
-.crafting-items-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.crafting-items{
-    max-width: 33.33%;
-    margin-right: 1px;
-}
-
-.crafting-item-title{
-    font-size: 24px;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: normal;
-}
-
-.crafting-items-top{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.crafting-item h3{
     margin: 4px;
 }
 
-.crafting-recipe-image{
-    padding: 4px;
-    min-height: 128px;
-}
-
-.crafting-items-amount{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-.crafting-items-text{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 8px;
-    font-size: 24px;
+.crafting-item-image{
+    width: 50%;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .crafting-item-amount{
-    margin-right: 32px;
-    font-size: 24px;
-    width: 40px;
+    font-size: 1.5em;
+    width: 4.5em;
     background: transparent;
     text-align: center;
     color: #ffffff;
-    border:none;
+    border: none;
     -webkit-box-shadow: inset 0px 0px 8px #333333;
     -moz-box-shadow: inset 0px 0px 8px #333333;
     box-shadow: inset 0px 0px 8px #333333;
 }
 
-.crafting-items-info{
-    width: 32px;
-    height: 32px;
-}
-
-.crafting-items-image{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+.crafting-item-info{
+    width: 1.5em;
+    height: auto;
 }
 
 .arrow{
-    width: 48px;
-    height: 48px;
+    width: auto;
 }
 
 /* Background for the different crafting tiers */
@@ -220,107 +159,80 @@ p{
     background-image: linear-gradient(to bottom, #81e3da, #7d2ba6);
 }
 
-/* CSS for the Ruin Crafting: Artifact*/
-.fit-content{
-    width: fit-content;
-    max-width: 40%;
+/* Crafting time input */
+.crafting-time-container{
+    display: block;
 }
 
-.inline-paragraph{
-    margin: 0 0 0 0;
-    text-align: center;
-    font-size: 24px;
+.crafting-time-info{
+    width: 10vw;
+    max-width: 1.5em;
 }
 
-/* CSS for the calculator container */
-.calculator-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.calculator-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.calculator-body{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.calculator-body button{
-    margin: 4px;
-    width: fit-content;
-}
-
-.calculator-time{
-    display: flex;
-}
-
-.calculator-text, .calculator-body button{
-    font-size: 48px;
-}
-
-.user-time{
-    top: 0px;
-    bottom: 0px;
-    margin: auto 2px auto 2px;
-}
-
-.info-icon{
-    width: 32px;
-    height: 32px;
-}
-
-.user-time-input{
-    width: 48px;
-    text-align: center;
-}
-
-/* CSS for output of the calculations */
-.output-container{
-    display: flex;
-    flex-direction: column;
+.crafting-time-input{
+    width: 40vw;
     margin: auto;
-    max-width: 75%;
+    padding: 8px;
 }
 
-.output-total{
-    font-size: 24px;
-    margin-top: 8px;
-    margin-bottom: 4px;
+.user-input-label{
+    vertical-align: middle;
 }
 
-.output-container-total{
+.user-input{
+    font-size: 1em;
+    width: 15vw;
+    float: right;   
+}
+
+.crafting-button{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crafting-button button{
+    font-size: 1.5em;
+    margin: 8px;
+}
+
+/* output-container */
+.output-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.output-total span{
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 1.5em;
+}
+
+.output-table{
+    left: 0px;
+    right: 0px;
     margin: auto;
 }
 
 table{
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 70vw;
-    font-size: 18px;
-}
-
-table img{
-    height: 32px;
+    table-layout: fixed;
+    width: 100%;
 }
 
 th{
-    font-size: 24px;
-    font-style: bold;
-    text-align: center;
+    font-weight: 900;
+    font-size: 1em;
 }
 
 td{
     text-align: center;
+}
+
+td img{
+    max-height: 5vw;
 }
 
 tbody tr:nth-child(odd){
@@ -361,6 +273,7 @@ tbody tr:nth-child(even){
 /* feedback.html */
 .feedback{
     text-align: center;
+    width: 100%;
 }
 
 /* privacy.html */
