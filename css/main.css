@@ -5,6 +5,15 @@ body{
     color: #ffffff;
 }
 
+/* CSS for version number */
+.version-number{
+    position: absolute;
+    font-size: 0.75em;
+    top: 0vw;
+    right: 1vw;
+    width: auto;;
+}
+
 .tooltip-inner{
     position: absolute;
     background-color: gray;
@@ -96,6 +105,13 @@ p{
 .crafting-container h2{
     margin-bottom: 0px;
     margin-top: 0.5em;
+}
+
+.crafting-container select,
+.crafting-container button,
+.crafting-container label {
+    margin: 4px;
+    font-size: 1.5em;
 }
 
 .crafting-tier{

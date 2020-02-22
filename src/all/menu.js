@@ -1,8 +1,16 @@
 /**
+ * Entry point for menu js
+ */
+startMenu();
+function startMenu(){
+    document.getElementById("versionNumber").innerText = "Version: " + __VERSION__;
+    registerHamburgerMenu();
+}
+
+/**
  * Sets up the hamburgerMenu events
  */
-registerHamburgeMenu();
-function registerHamburgeMenu(){
+function registerHamburgerMenu(){
     document.getElementById("hamburgerMenu").onclick = hamburgerMenu;
 }
 
