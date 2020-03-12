@@ -5,6 +5,15 @@ body{
     color: white;
 }
 
+.event-timer{
+    text-decoration: underline;
+}
+
+.event-ongoing{
+    color: gold;
+    text-decoration: underline;
+}
+
 /* CSS for version number */
 .version-number{
     position: absolute;
@@ -76,13 +85,13 @@ body{
 
 /* CSS for Main Menu */
 .topnav{
-    float: left;
     text-decoration: none;
     overflow: none;
     width: 100vw;
     max-width: 100%;
     border-bottom: solid 2px black;
     font-size: 2em;
+    margin-top: 12px;
 }
 
 .topnav a{
@@ -100,6 +109,10 @@ p{
 
 a{
     color: gold;
+}
+
+h1.text-center{
+    margin: 4px;
 }
 
 .text-center{
