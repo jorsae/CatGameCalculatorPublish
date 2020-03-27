@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title> Cat Game Crafting Calculator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A calculator for optimizing your crafting needs in Cat Game - The Cats Collector!">
+        <meta name="description" content="Optimize your cat game club event crafting the easy way!">
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
         <script type="text/javascript" src="dist/event.min.js" defer></script>
         <script type="text/javascript" src="dist/all.min.js" defer></script>
@@ -41,7 +41,8 @@
         <p id="versionNumber" class="version-number"></p>
 
         <div class="topnav" id="topNav">
-            <a href="./">Cat Game Calculator</a>
+            <a href="./">Home</a>
+            <a href="normal.html">Normal crafting</a>
             <a href="event.html">Club Event</a>
             <a href="https://discord.gg/AXbUEBs">Discord</a>
             <a href="about.html">About</a>
@@ -58,9 +59,10 @@
 
         <h1 class="text-center">Club Event Calculator</h1>
         <p id="eventCountdown" class="event-timer text-center"></p>
-        <h2 id="howToUse" class="text-center no-margin">How to use &#8691;</h2>
+        <button id="howToUse" class="text-center no-margin">How to use&nbsp;&nbsp;&nbsp;&nbsp;&#8691;</button>
         <div id="guideContainer" class="guide-container">
             <ol>
+                <p class="text-center">For more information go to <a href="index.html">home</a></p>
                 <li>Click to select the raw material, with the highest cost for you (this is different for each player)</li>
                 <li>Input the items you want to craft. This can be done manually or you can add decoration/cat at a time.</li>
                 <li>Select the time you want to use crafting them (shorter time, costs more)</li>
@@ -93,6 +95,7 @@
             <select id="floors" aria-label="Selection to add pre-made event items">
             </select>
             <button id="addFloor" data-toggle="popover" data-placement="top">Add</button>
+            <button id="quickCalculate">Calculate meow</button>
 
             <h2>Tier 1 Crafting</h2>
             <div class="crafting-tier">

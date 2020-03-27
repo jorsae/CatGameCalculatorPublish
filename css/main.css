@@ -96,6 +96,57 @@ h1.text-center{
     cursor: pointer;
 }
 
+/* CSS For index page */
+.calculator-selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.calculator-option{
+    font-size: 3em;
+    border: solid 1px white;
+    margin: 8px;
+}
+
+.calculator-option:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+.guide-container-wrapper{
+    text-align: center;
+}
+
+.full-guide{
+    display: inline-block;
+    flex-direction: column;
+    height: auto !important;
+    text-align: left;
+    width: 70vw;
+    max-width: 70%;
+}
+
+ol {
+    font-size: 1.25em;
+    counter-reset: item
+}
+li {
+    display: block
+}
+li:before {
+    content: counters(item, ".") ") ";
+    counter-increment: item
+}
+
+.small{
+    font-size: 0.75em;
+}
+
+.super-small{
+    font-size: 0.95em;
+}
+
 /* CSS for Main Menu */
 .topnav{
     text-decoration: none;
@@ -117,12 +168,11 @@ h1.text-center{
 
 /* CSS for 'How-to use' */
 #howToUse{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     margin-top: 12px;
-    width: auto;
-    cursor: pointer;
-}
-#howToUse:hover{
-    color: gold;
+    font-size: 1em;
 }
 
 .guide-container{
