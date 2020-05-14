@@ -59,7 +59,7 @@
 
         <h1 class="text-center">Club Event Calculator</h1>
         <p id="eventCountdown" class="event-timer text-center"></p>
-        <button id="howToUse" class="text-center no-margin">How to use&nbsp;&nbsp;&nbsp;&nbsp;&#8691;</button>
+        <button id="howToUse" class="text-center no-margin">How to use&nbsp;&nbsp;<i class="fa fa-angle-double-down"></i></button>
         <div id="guideContainer" class="guide-container">
             <ol>
                 <p class="text-center">For more information go to <a href="index.html">home</a></p>
@@ -97,7 +97,7 @@
             <h2>Tier 1 Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item common">
-                    <h3 class="crafting-item-header"></h3>
+                    <button class="crafting-item-button"></button>
                     <span>
                         <input class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
@@ -108,7 +108,7 @@
                     </span>
                 </div>
                 <div class="crafting-item common">
-                    <h3 class="crafting-item-header"></h3>
+                    <button class="crafting-item-button"></button>
                     <span>
                         <input class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
@@ -119,7 +119,7 @@
                     </span>
                 </div>
                 <div class="crafting-item rare">
-                    <h3 class="crafting-item-header"></h3>
+                    <button class="crafting-item-button"></button>
                     <span>
                         <input class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
@@ -134,7 +134,7 @@
             <h2>Tier 2 Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item common">
-                    <h3 class="crafting-item-header"></h3>
+                    <button class="crafting-item-button"></button>
                     <span>
                         <input class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
@@ -145,7 +145,7 @@
                     </span>
                 </div>
                 <div class="crafting-item rare">
-                    <h3 class="crafting-item-header"></h3>
+                    <button class="crafting-item-button"></button>
                     <span>
                         <input class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
@@ -156,7 +156,7 @@
                     </span>
                 </div>
                 <div class="crafting-item epic">
-                    <h3 class="crafting-item-header"></h3>
+                    <button class="crafting-item-button"></button>
                     <span>
                         <input class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
@@ -171,7 +171,7 @@
             <h2>Star crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item common">
-                    <h3 class="crafting-item-header"></h3>
+                    <button class="crafting-item-button"></button>
                     <span>
                         <input class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
@@ -187,7 +187,7 @@
         <div class="crafting-time-container">
             <h2 class="text-center">
                 <span>Crafting time</span>
-                <img class="crafting-time-info" src="images/info-icon.png" data-toggle="tooltip" data-placement="bottom" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." alt="Information icon for explaining Crafting Time">
+                <i class="crafting-time-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." alt="Information icon for explaining Crafting Time"></i>
             </h2>
 
             <p class="crafting-time-input">
@@ -214,10 +214,10 @@
                 <span id="outputTotalCost"></span>
                 <span id="outputTotalTime"></span>
             </div>
+            <button id="copyClipboard" data-toggle="popover" data-placement="top">Copy to clipboard</button>
             <table id="outputTable" class="output-table">
                 <thead>
                     <tr>
-                        <th><button id="copyClipboard" data-toggle="popover" data-placement="top">Copy to clipboard</button></th>
                         <th>Item</th>
                         <th>Quantity</th>
                         <th>Cost</th>
