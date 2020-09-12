@@ -276,7 +276,7 @@ li:before {
 
 .crafting-item-amount{
     font-size: 1.5em;
-    width: 4em;
+    width: 90%;
     margin: auto;
     background: transparent;
     text-align: center;
@@ -288,6 +288,10 @@ li:before {
 }
 .crafting-item-amount.light-theme{
     color: white;
+}
+
+.inventory.hide-inventory{
+    display: none;
 }
 
 .arrow{
@@ -350,6 +354,7 @@ li:before {
 
 .output-total{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 8px;
@@ -492,11 +497,11 @@ input[type=checkbox] {
 }
 
 /* Light mode buttons */
-.light-mode-container{
+.settings-container{
     position: relative;
 }
 
-.light-mode-label{
+.settings-label{
     display: inline-block;
 }
 
