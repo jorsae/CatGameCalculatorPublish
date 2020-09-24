@@ -56,17 +56,23 @@
         </div>
         
         <div class="settings-container">
-            <h5 class="settings-label">Light mode</h4>
+            <h5 class="settings-label">Light mode</h5>
             <label class="switch">
                 <input id="checkboxLightTheme" type="checkbox">
                 <span class="slider round"></span>
             </label>
 
-            <h5 class="settings-label">Inventory</h4>
-                <label class="switch">
-                    <input id="checkboxInventory" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
+            <h5 class="settings-label">Inventory</h5>
+            <label class="switch">
+                <input id="checkboxInventory" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+
+            <h5 class="settings-label">Crafting time</h5>
+            <label class="switch">
+                <input id="checkboxCraftingTime" type="checkbox">
+                <span class="slider round"></span>
+            </label>
         </div>
 
         <h1 class="text-center">Cat Game Calculator</h1>
@@ -95,25 +101,35 @@
 
         <hr>
         <div class="crafting-time-container">
-            <h2 class="text-center">
-                <span>Crafting time</span>
-                <i class="crafting-time-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." alt="Information icon for explaining Crafting Time"></i>
-            </h2>
+            <h2 id="craftingModeHeader" class="text-center">Crafting Mode</h2>
 
-            <p class="crafting-time-input">
-                <span class="user-input-label">Hours:</span>
-                <input id="userTimeHours" class="user-input" aria-label="Input for crafting time hours" type="number" value="0">
-                <input id="userTimeBoost" class="user-input" aria-label="Input for boost" type="hidden" value="1.00">
-            </p>
-            <p class="crafting-time-input">
-                <span class="user-input-label">Minutes:</span>
-                <input id="userTimeMinutes" class="user-input" aria-label="Input for crafting time minutes" type="number" value="1">
-            </p>
-            <div class="crafting-time-input">
-                <p>Remember to set the crafting time!</p>
-                <label for="crafting" class="crafting-minute">1 minute crafting</label>
-                <input id="crafting" type="checkbox" name="crafting" class="crafting-minute">
+            <div id="craftingModeContainer" class="crafting-mode crafting-time-input">
+                <select id="craftingMode" class="crafting-time-input" aria-label="Which crafting mode to use">
+                    <option value="casual">Casual</option>
+                    <option value="semi-competitive">Semi-competitive</option>
+                    <option value="competitive">Competitive</option>
+                </select>
             </div>
+
+            <div id="craftingTime" class="crafting-time hide-crafting-time">
+                <p class="crafting-time-input">
+                    <span class="user-input-label">Hours:</span>
+                    <input id="userTimeHours" class="user-input" aria-label="Input for crafting time hours" type="number" value="0">
+                    <input id="userTimeBoost" class="user-input" aria-label="Input for boost" type="hidden" value="1.00">
+                </p>
+                <p class="crafting-time-input">
+                    <span class="user-input-label">Minutes:</span>
+                    <input id="userTimeMinutes" class="user-input" aria-label="Input for crafting time minutes" type="number" value="1">
+                </p>
+            </div>
+
+            <div class="crafting-time">
+                <div class="crafting-time-input">
+                    <label for="crafting" class="crafting-minute">1 minute crafting</label>
+                    <input id="crafting" type="checkbox" name="crafting" class="crafting-minute">
+                </div>
+            </div>
+
             <div class="crafting-button">
                 <button id="calculate" data-toggle="popover" data-placement="top">Calculate</button>
                 <button id="clearCrafting" data-toggle="popover" data-placement="top">Clear</button>
