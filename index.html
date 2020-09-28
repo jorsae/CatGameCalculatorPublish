@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157531722-1"></script>
@@ -21,18 +20,6 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-157531722-1');
-        </script>
-
-        <script>
-            $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip({
-                    boundary: "window"
-                });
-                $('[data-toggle="popover"]').on('shown.bs.popover', function(){
-                    setTimeout(function() {
-                        $('[data-toggle="popover"]').popover("hide")}, 2000);
-                });
-            });
         </script>
     </head>
     <body>
@@ -55,12 +42,14 @@
             <button id="cookieAccept" class="cookie-policy-close">Accept</button>
         </div>
         
-        <div class="light-mode-container">
-            <h5 class="light-mode-label">Light mode</h4>
-            <label class="switch">
-                <input id="checkboxLightTheme" type="checkbox">
-                <span class="slider round"></span>
-            </label>
+        <div class="settings-container">
+            <span>
+                <h5 class="settings-label">Light mode</h5>
+                <label class="switch">
+                    <input id="checkboxLightTheme" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </span>
         </div>
 
         <div id="727437446">
@@ -76,8 +65,8 @@
 
         <h1 class="text-center">Cat Game Calculator</h1>
         <div class="calculator-selection">
-            <a href="normal.html" class="calculator-option">Normal crafting</a>
-            <a href="event.html" class="calculator-option">Club-Event crafting</a>
+            <a href="normal.html" class="calculator-option"><img src="images/normal-crafting_logo.png" class="calculator-selection-logo" alt="Normal crafting"></a>
+            <a href="event.html" class="calculator-option"><img src="images/club-event-crafting_logo.png" class="calculator-selection-logo" alt="Club-Event crafting"></a>
         </div>
         
         <p class="text-center">For <strong>mini event reminders</strong>, join our discord:
@@ -101,7 +90,6 @@
                             <li>Higher time will mean you will craft more items at a time, but at a increased cost</li>
                         </ol>
                     </li>
-                    <li>These images <i class="fa fa-info-circle" title="Helpful tip" data-toggle="tooltip" data-placement="right" alt="info-icon tip"></i> can be utilised for tips. By clicking on them.</li>
                     <li>Press the "Calculate meow" button</li>
                     <li>You can also export the calculations, by clicking the "Copy to clipboard" button and pasting it in excel/google sheet or something similar.</li>
                 </ol>
